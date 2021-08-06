@@ -1,0 +1,73 @@
+BLEU TER
+CT2
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/TEST-SETS/REF/en-fr-test.tok.ref.tok
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/en-fr-TRANS-BPE-NEW/data/test.tc.bpe.src.ct2.out.final
+31.03 n=1 BLEU (s_sel/s_opt/p) TER (s_sel/s_opt/p) baseline 36.4 (0.0/*/-) 49.5 (0.0/*/-) 1080Ti_metrics_ct2.txt 1_split_ttv.sh 2_tokenize_data.sh 3_dic
+tionary_bpe.sh 3_dictionary_words.sh 3_truecase_data.sh 4_train_lstm_bpe.sh 4_train_lstm_words.sh 4_train_trans_bpe.sh 4_train_trans_words.sh 5_translat
+e.sh 5_translate_ct2.py 5_translate_ct2.sh 5_translate_server.sh 5_translate_server_parallel.sh 5_translate_simple.sh 7_postprocess.sh 8_eval_multi.sh 8
+_eval_single.sh MTTools OpenNMT-py README.md clear_empty.sh evaluate_all.sh evaluate_all_ct2.sh evaluate_all_server.sh main_translate.sh power_monitor.p
+y process_all_bias_specific.sh score_bleu_ter.py score_lexical_diversity.py translation_evaluation.sh Indicates no estimate of optimizer instability due
+ to single optimizer run. Consider multiple optimizer runs.
+CT2_INT8
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/TEST-SETS/REF/en-fr-test.tok.ref.tok
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/en-fr-TRANS-BPE-NEW/data/test.tc.bpe.src.ct2_int8.out.final
+30.95 n=1 BLEU (s_sel/s_opt/p) TER (s_sel/s_opt/p) baseline 36.3 (0.0/*/-) 49.5 (0.0/*/-) 1080Ti_metrics_ct2.txt 1_split_ttv.sh 2_tokenize_data.sh 3_dic
+tionary_bpe.sh 3_dictionary_words.sh 3_truecase_data.sh 4_train_lstm_bpe.sh 4_train_lstm_words.sh 4_train_trans_bpe.sh 4_train_trans_words.sh 5_translat
+e.sh 5_translate_ct2.py 5_translate_ct2.sh 5_translate_server.sh 5_translate_server_parallel.sh 5_translate_simple.sh 7_postprocess.sh 8_eval_multi.sh 8
+_eval_single.sh MTTools OpenNMT-py README.md clear_empty.sh evaluate_all.sh evaluate_all_ct2.sh evaluate_all_server.sh main_translate.sh power_monitor.p
+y process_all_bias_specific.sh score_bleu_ter.py score_lexical_diversity.py translation_evaluation.sh Indicates no estimate of optimizer instability due
+ to single optimizer run. Consider multiple optimizer runs.
+CT2_INT16
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/TEST-SETS/REF/en-fr-test.tok.ref.tok
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/en-fr-TRANS-BPE-NEW/data/test.tc.bpe.src.ct2_int16.out.final
+31.02 n=1 BLEU (s_sel/s_opt/p) TER (s_sel/s_opt/p) baseline 36.4 (0.0/*/-) 49.5 (0.0/*/-) 1080Ti_metrics_ct2.txt 1_split_ttv.sh 2_tokenize_data.sh 3_dic
+tionary_bpe.sh 3_dictionary_words.sh 3_truecase_data.sh 4_train_lstm_bpe.sh 4_train_lstm_words.sh 4_train_trans_bpe.sh 4_train_trans_words.sh 5_translat
+e.sh 5_translate_ct2.py 5_translate_ct2.sh 5_translate_server.sh 5_translate_server_parallel.sh 5_translate_simple.sh 7_postprocess.sh 8_eval_multi.sh 8
+_eval_single.sh MTTools OpenNMT-py README.md clear_empty.sh evaluate_all.sh evaluate_all_ct2.sh evaluate_all_server.sh main_translate.sh power_monitor.py process_all_bias_specific.sh score_bleu_ter.py score_lexical_diversity.py translation_evaluation.sh Indicates no estimate of optimizer instability due to single optimizer run. Consider multiple optimizer runs.
+CT2
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/TEST-SETS/REF/en-es-test.tok.ref.tok
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/en-es-TRANS-BPE-NEW/data/test.tc.bpe.src.ct2.out.final
+40.46 n=1 BLEU (s_sel/s_opt/p) TER (s_sel/s_opt/p) baseline 40.5 (0.0/*/-) 44.1 (0.0/*/-) 1080Ti_metrics_ct2.txt 1_split_ttv.sh 2_tokenize_data.sh 3_dic
+tionary_bpe.sh 3_dictionary_words.sh 3_truecase_data.sh 4_train_lstm_bpe.sh 4_train_lstm_words.sh 4_train_trans_bpe.sh 4_train_trans_words.sh 5_translat
+e.sh 5_translate_ct2.py 5_translate_ct2.sh 5_translate_server.sh 5_translate_server_parallel.sh 5_translate_simple.sh 7_postprocess.sh 8_eval_multi.sh 8
+_eval_single.sh MTTools OpenNMT-py README.md clear_empty.sh evaluate_all.sh evaluate_all_ct2.sh evaluate_all_server.sh main_translate.sh power_monitor.p
+y process_all_bias_specific.sh score_bleu_ter.py score_lexical_diversity.py translation_evaluation.sh Indicates no estimate of optimizer instability due
+ to single optimizer run. Consider multiple optimizer runs.
+CT2_INT8
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/TEST-SETS/REF/en-es-test.tok.ref.tok
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/en-es-TRANS-BPE-NEW/data/test.tc.bpe.src.ct2_int8.out.final
+40.53 n=1 BLEU (s_sel/s_opt/p) TER (s_sel/s_opt/p) baseline 40.6 (0.0/*/-) 44.1 (0.0/*/-) 1080Ti_metrics_ct2.txt 1_split_ttv.sh 2_tokenize_data.sh 3_dic
+tionary_bpe.sh 3_dictionary_words.sh 3_truecase_data.sh 4_train_lstm_bpe.sh 4_train_lstm_words.sh 4_train_trans_bpe.sh 4_train_trans_words.sh 5_translat
+e.sh 5_translate_ct2.py 5_translate_ct2.sh 5_translate_server.sh 5_translate_server_parallel.sh 5_translate_simple.sh 7_postprocess.sh 8_eval_multi.sh 8
+_eval_single.sh MTTools OpenNMT-py README.md clear_empty.sh evaluate_all.sh evaluate_all_ct2.sh evaluate_all_server.sh main_translate.sh power_monitor.p
+y process_all_bias_specific.sh score_bleu_ter.py score_lexical_diversity.py translation_evaluation.sh Indicates no estimate of optimizer instability due
+ to single optimizer run. Consider multiple optimizer runs.
+CT2_INT16
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/TEST-SETS/REF/en-es-test.tok.ref.tok
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/en-es-TRANS-BPE-NEW/data/test.tc.bpe.src.ct2_int16.out.final
+40.54 n=1 BLEU (s_sel/s_opt/p) TER (s_sel/s_opt/p) baseline 40.6 (0.0/*/-) 44.1 (0.0/*/-) 1080Ti_metrics_ct2.txt 1_split_ttv.sh 2_tokenize_data.sh 3_dictionary_bpe.sh 3_dictionary_words.sh 3_truecase_data.sh 4_train_lstm_bpe.sh 4_train_lstm_words.sh 4_train_trans_bpe.sh 4_train_trans_words.sh 5_translate.sh 5_translate_ct2.py 5_translate_ct2.sh 5_translate_server.sh 5_translate_server_parallel.sh 5_translate_simple.sh 7_postprocess.sh 8_eval_multi.sh 8_eval_single.sh MTTools OpenNMT-py README.md clear_empty.sh evaluate_all.sh evaluate_all_ct2.sh evaluate_all_server.sh main_translate.sh power_monitor.py process_all_bias_specific.sh score_bleu_ter.py score_lexical_diversity.py translation_evaluation.sh Indicates no estimate of optimizer instability due to single optimizer run. Consider multiple optimizer runs.
+CT2
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/TEST-SETS/REF/fr-en-test.tok.ref.tok
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/fr-en-TRANS-BPE-NEW/data/test.tc.bpe.src.ct2.out.final
+36.13 n=1 BLEU (s_sel/s_opt/p) TER (s_sel/s_opt/p) baseline 36.6 (0.0/*/-) 47.3 (0.0/*/-) 1080Ti_metrics_ct2.txt 1_split_ttv.sh 2_tokenize_data.sh 3_dictionary_bpe.sh 3_dictionary_words.sh 3_truecase_data.sh 4_train_lstm_bpe.sh 4_train_lstm_words.sh 4_train_trans_bpe.sh 4_train_trans_words.sh 5_translate.sh 5_translate_ct2.py 5_translate_ct2.sh 5_translate_server.sh 5_translate_server_parallel.sh 5_translate_simple.sh 7_postprocess.sh 8_eval_multi.sh 8_eval_single.sh MTTools OpenNMT-py README.md clear_empty.sh evaluate_all.sh evaluate_all_ct2.sh evaluate_all_server.sh main_translate.sh power_monitor.py process_all_bias_specific.sh score_bleu_ter.py score_lexical_diversity.py translation_evaluation.sh Indicates no estimate of optimizer instability due to single optimizer run. Consider multiple optimizer runs.
+CT2_INT8
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/TEST-SETS/REF/fr-en-test.tok.ref.tok
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/fr-en-TRANS-BPE-NEW/data/test.tc.bpe.src.ct2_int8.out.final
+36.04 n=1 BLEU (s_sel/s_opt/p) TER (s_sel/s_opt/p) baseline 36.5 (0.0/*/-) 47.3 (0.0/*/-) 1080Ti_metrics_ct2.txt 1_split_ttv.sh 2_tokenize_data.sh 3_dictionary_bpe.sh 3_dictionary_words.sh 3_truecase_data.sh 4_train_lstm_bpe.sh 4_train_lstm_words.sh 4_train_trans_bpe.sh 4_train_trans_words.sh 5_translate.sh 5_translate_ct2.py 5_translate_ct2.sh 5_translate_server.sh 5_translate_server_parallel.sh 5_translate_simple.sh 7_postprocess.sh 8_eval_multi.sh 8_eval_single.sh MTTools OpenNMT-py README.md clear_empty.sh evaluate_all.sh evaluate_all_ct2.sh evaluate_all_server.sh main_translate.sh power_monitor.py process_all_bias_specific.sh score_bleu_ter.py score_lexical_diversity.py translation_evaluation.sh Indicates no estimate of optimizer instability due to single optimizer run. Consider multiple optimizer runs.
+CT2_INT16
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/TEST-SETS/REF/fr-en-test.tok.ref.tok
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/fr-en-TRANS-BPE-NEW/data/test.tc.bpe.src.ct2_int16.out.final
+36.14 n=1 BLEU (s_sel/s_opt/p) TER (s_sel/s_opt/p) baseline 36.6 (0.0/*/-) 47.3 (0.0/*/-) 1080Ti_metrics_ct2.txt 1_split_ttv.sh 2_tokenize_data.sh 3_dictionary_bpe.sh 3_dictionary_words.sh 3_truecase_data.sh 4_train_lstm_bpe.sh 4_train_lstm_words.sh 4_train_trans_bpe.sh 4_train_trans_words.sh 5_translate.sh 5_translate_ct2.py 5_translate_ct2.sh 5_translate_server.sh 5_translate_server_parallel.sh 5_translate_simple.sh 7_postprocess.sh 8_eval_multi.sh 8_eval_single.sh MTTools OpenNMT-py README.md clear_empty.sh evaluate_all.sh evaluate_all_ct2.sh evaluate_all_server.sh main_translate.sh power_monitor.py process_all_bias_specific.sh score_bleu_ter.py score_lexical_diversity.py translation_evaluation.sh Indicates no estimate of optimizer instability due to single optimizer run. Consider multiple optimizer runs.
+CT2
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/TEST-SETS/REF/es-en-test.tok.ref.tok
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/es-en-TRANS-BPE-NEW/data/test.tc.bpe.src.ct2.out.final
+40.35 n=1 BLEU (s_sel/s_opt/p) TER (s_sel/s_opt/p) baseline 40.9 (0.0/*/-) 44.1 (0.0/*/-) 1080Ti_metrics_ct2.txt 1_split_ttv.sh 2_tokenize_data.sh 3_dictionary_bpe.sh 3_dictionary_words.sh 3_truecase_data.sh 4_train_lstm_bpe.sh 4_train_lstm_words.sh 4_train_trans_bpe.sh 4_train_trans_words.sh 5_translate.sh 5_translate_ct2.py 5_translate_ct2.sh 5_translate_server.sh 5_translate_server_parallel.sh 5_translate_simple.sh 7_postprocess.sh 8_eval_multi.sh 8_eval_single.sh MTTools OpenNMT-py README.md clear_empty.sh evaluate_all.sh evaluate_all_ct2.sh evaluate_all_server.sh main_translate.sh power_monitor.py process_all_bias_specific.sh score_bleu_ter.py score_lexical_diversity.py translation_evaluation.sh Indicates no estimate of optimizer instability due to single optimizer run. Consider multiple optimizer runs.
+CT2_INT8
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/TEST-SETS/REF/es-en-test.tok.ref.tok
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/es-en-TRANS-BPE-NEW/data/test.tc.bpe.src.ct2_int8.out.final
+40.30 n=1 BLEU (s_sel/s_opt/p) TER (s_sel/s_opt/p) baseline 40.8 (0.0/*/-) 44.1 (0.0/*/-) 1080Ti_metrics_ct2.txt 1_split_ttv.sh 2_tokenize_data.sh 3_dictionary_bpe.sh 3_dictionary_words.sh 3_truecase_data.sh 4_train_lstm_bpe.sh 4_train_lstm_words.sh 4_train_trans_bpe.sh 4_train_trans_words.sh 5_translate.sh 5_translate_ct2.py 5_translate_ct2.sh 5_translate_server.sh 5_translate_server_parallel.sh 5_translate_simple.sh 7_postprocess.sh 8_eval_multi.sh 8_eval_single.sh MTTools OpenNMT-py README.md clear_empty.sh evaluate_all.sh evaluate_all_ct2.sh evaluate_all_server.sh main_translate.sh power_monitor.py process_all_bias_specific.sh score_bleu_ter.py score_lexical_diversity.py translation_evaluation.sh Indicates no estimate of optimizer instability due to single optimizer run. Consider multiple optimizer runs.
+CT2_INT16
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/TEST-SETS/REF/es-en-test.tok.ref.tok
+/media/barracuda4tb/dimitarsh1/Projects/BiasNMT_II/data/es-en-TRANS-BPE-NEW/data/test.tc.bpe.src.ct2_int16.out.final
+40.35 n=1 BLEU (s_sel/s_opt/p) TER (s_sel/s_opt/p) baseline 40.9 (0.0/*/-) 44.0 (0.0/*/-) 1080Ti_metrics_ct2.txt 1_split_ttv.sh 2_tokenize_data.sh 3_dictionary_bpe.sh 3_dictionary_words.sh 3_truecase_data.sh 4_train_lstm_bpe.sh 4_train_lstm_words.sh 4_train_trans_bpe.sh 4_train_trans_words.sh 5_translate.sh 5_translate_ct2.py 5_translate_ct2.sh 5_translate_server.sh 5_translate_server_parallel.sh 5_translate_simple.sh 7_postprocess.sh 8_eval_multi.sh 8_eval_single.sh MTTools OpenNMT-py README.md clear_empty.sh evaluate_all.sh evaluate_all_ct2.sh evaluate_all_server.sh main_translate.sh power_monitor.py process_all_bias_specific.sh score_bleu_ter.py score_lexical_diversity.py translation_evaluation.sh Indicates no estimate of optimizer instability due to single optimizer run. Consider multiple optimizer runs.
+

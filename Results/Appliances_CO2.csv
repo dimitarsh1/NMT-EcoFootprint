@@ -1,0 +1,89 @@
+Appliance	Country	CO2
+Microwave Oven	Ireland	20.853969696
+Washing Machine	Ireland	27.081196758
+Electric Tumble Dryer	Ireland	85.052566
+Kettle	Ireland	38.990854716
+Electric Oven	Ireland	48.4468610808
+Electric Hob	Ireland	69.200606672
+Dishwasher at 55°C	Ireland	27.05591086
+Dishwasher at 65°C	Ireland	44.68707792
+Fridge-Freezer A ++ spec	Ireland	47.3535908
+Fridge-Freezer A+ spec	Ireland	62.065386
+Fridge-Freezer A spec	Ireland	93.7876944
+Primary TV – LCD 34-37 inch	Ireland	3.4064702042
+1080Ti (LSTM – EN-FR)	Ireland	1129.68241386603
+1080Ti (LSTM – EN-ES)	Ireland	1119.1819544076
+1080Ti (LSTM – FR-EN)	Ireland	1126.32293190983
+1080Ti (LSTM – ES-EN)	Ireland	1110.08279121903
+1080Ti (TRANS – EN-FR)	Ireland	1404.1732114023
+1080Ti (TRANS – EN-ES)	Ireland	1403.47182618182
+1080Ti (TRANS – FR-EN)	Ireland	1404.66247036098
+1080Ti (TRANS – ES-EN)	Ireland	1424.77143962264
+P100 (LSTM – EN-FR)	Ireland	676.92911351248
+P100 (LSTM – EN-ES)	Ireland	669.614069791116
+P100 (LSTM – FR-EN)	Ireland	668.338663931183
+P100 (LSTM – ES-EN)	Ireland	667.731508909943
+P100 (TRANS – EN-FR)	Ireland	903.368916474308
+P100 (TRANS – EN-ES)	Ireland	893.859908237624
+P100 (TRANS – FR-EN)	Ireland	892.660923958763
+P100 (TRANS – ES-EN)	Ireland	889.915305212903
+1080Ti (LSTM – EN-FR Translate)	Ireland	291.453245368421
+1080Ti (LSTM – EN-ES Translate)	Ireland	291.83724173913
+1080Ti (LSTM – FR-EN Translate)	Ireland	285.521361134328
+1080Ti (LSTM – ES-EN Translate)	Ireland	285.724434648649
+1080Ti (TRANS – EN-FR Translate)	Ireland	344.545488821293
+1080Ti (TRANS – EN-ES Translate)	Ireland	308.547277354839
+1080Ti (TRANS – FR-EN Translate)	Ireland	383.169301603239
+1080Ti (TRANS – ES-EN Translate)	Ireland	345.201765942857
+P100 (LSTM – EN-FR Translate)	Ireland	175.102345043478
+P100 (LSTM – EN-ES Translate)	Ireland	178.728724970414
+P100 (LSTM – FR-EN Translate)	Ireland	179.993472
+P100 (LSTM – ES-EN Translate)	Ireland	174.02146637037
+P100 (TRANS – EN-FR Translate)	Ireland	207.388657833887
+P100 (TRANS – EN-ES Translate)	Ireland	201.3676968
+P100 (TRANS – FR-EN Translate)	Ireland	196.301842792453
+P100 (TRANS – ES-EN Translate)	Ireland	209.602063583643
+Microwave Oven	Netherlands	36.23071032
+Washing Machine	Netherlands	47.049602985
+Electric Tumble Dryer	Netherlands	147.766345
+Kettle	Netherlands	67.74088497
+Electric Oven	Netherlands	84.169307586
+Electric Hob	Netherlands	120.22589324
+Dishwasher at 55°C	Netherlands	47.00567245
+Dishwasher at 65°C	Netherlands	77.6372364
+Fridge-Freezer A ++ spec	Netherlands	82.269911
+Fridge-Freezer A+ spec	Netherlands	107.829495
+Fridge-Freezer A spec	Netherlands	162.942348
+Primary TV – LCD 34-37 inch	Netherlands	5.9182418015
+1080Ti (LSTM – EN-FR)	Netherlands	1962.65732074163
+1080Ti (LSTM – EN-ES)	Netherlands	1944.41431423442
+1080Ti (LSTM – FR-EN)	Netherlands	1956.82071412165
+1080Ti (LSTM – ES-EN)	Netherlands	1928.60585424118
+1080Ti (TRANS – EN-FR)	Netherlands	2439.54477747127
+1080Ti (TRANS – EN-ES)	Netherlands	2438.32622363636
+1080Ti (TRANS – FR-EN)	Netherlands	2440.39479307317
+1080Ti (TRANS – ES-EN)	Netherlands	2475.3311745283
+P100 (LSTM – EN-FR)	Netherlands	1176.06493997876
+P100 (LSTM – EN-ES)	Netherlands	1163.35612559424
+P100 (LSTM – FR-EN)	Netherlands	1161.1402951828
+P100 (LSTM – ES-EN)	Netherlands	1160.08545248308
+P100 (TRANS – EN-FR)	Netherlands	1569.47084905138
+P100 (TRANS – EN-ES)	Netherlands	1552.95034346535
+P100 (TRANS – FR-EN)	Netherlands	1550.8672843299
+P100 (TRANS – ES-EN)	Netherlands	1546.09717490323
+1080Ti (LSTM – EN-FR Translate)	Netherlands	506.357219210526
+1080Ti (LSTM – EN-ES Translate)	Netherlands	507.024356521739
+1080Ti (LSTM – FR-EN Translate)	Netherlands	496.051441343284
+1080Ti (LSTM – ES-EN Translate)	Netherlands	496.404251756757
+1080Ti (TRANS – EN-FR Translate)	Netherlands	598.597196577947
+1080Ti (TRANS – EN-ES Translate)	Netherlands	536.05558983871
+1080Ti (TRANS – FR-EN Translate)	Netherlands	665.700400080972
+1080Ti (TRANS – ES-EN Translate)	Netherlands	599.737381714286
+P100 (LSTM – EN-FR Translate)	Netherlands	304.214613913043
+P100 (LSTM – EN-ES Translate)	Netherlands	310.514916568047
+P100 (LSTM – FR-EN Translate)	Netherlands	312.712228826816
+P100 (LSTM – ES-EN Translate)	Netherlands	302.336745925926
+P100 (TRANS – EN-FR Translate)	Netherlands	360.307341727575
+P100 (TRANS – EN-ES Translate)	Netherlands	349.846806
+P100 (TRANS – FR-EN Translate)	Netherlands	341.045628490566
+P100 (TRANS – ES-EN Translate)	Netherlands	364.152809219331

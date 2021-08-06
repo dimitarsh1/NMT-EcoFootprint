@@ -1,0 +1,2 @@
+#Date	Time	gpu	fb	bar1	pwr	gtemp	mtemp	sm	mem	enc	dec	mclk	pclk	pviol	tviol
+#YYYYMMDD	HH:MM:SS	Idx	MB	MB	W	C	C	%	%	%	%	MHz	MHz	%	bool

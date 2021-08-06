@@ -1,0 +1,781 @@
+[2021-01-29 21:54:10,654 INFO]  * src vocab size = 46940
+[2021-01-29 21:54:10,654 INFO]  * tgt vocab size = 47978
+[2021-01-29 21:54:10,654 INFO] Building model...
+[2021-01-29 21:54:10,674 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.0.pt
+[2021-01-29 21:54:16,897 INFO] NMTModel(
+  (encoder): TransformerEncoder(
+    (embeddings): Embeddings(
+      (make_embedding): Sequential(
+        (emb_luts): Elementwise(
+          (0): Embedding(46940, 512, padding_idx=1)
+        )
+        (pe): PositionalEncoding(
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (transformer): ModuleList(
+      (0): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (1): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (2): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (3): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (4): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (5): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+    )
+    (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+  )
+  (decoder): TransformerDecoder(
+    (embeddings): Embeddings(
+      (make_embedding): Sequential(
+        (emb_luts): Elementwise(
+          (0): Embedding(47978, 512, padding_idx=1)
+        )
+        (pe): PositionalEncoding(
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (transformer_layers): ModuleList(
+      (0): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm_1): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (layer_norm_2): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (drop): Dropout(p=0.1, inplace=False)
+      )
+      (1): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm_1): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (layer_norm_2): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (drop): Dropout(p=0.1, inplace=False)
+      )
+      (2): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm_1): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (layer_norm_2): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (drop): Dropout(p=0.1, inplace=False)
+      )
+      (3): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm_1): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (layer_norm_2): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (drop): Dropout(p=0.1, inplace=False)
+      )
+      (4): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm_1): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (layer_norm_2): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (drop): Dropout(p=0.1, inplace=False)
+      )
+      (5): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm_1): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (layer_norm_2): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (drop): Dropout(p=0.1, inplace=False)
+      )
+    )
+    (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+  )
+  (generator): Sequential(
+    (0): Linear(in_features=512, out_features=47978, bias=True)
+    (1): Cast()
+    (2): LogSoftmax()
+  )
+)
+[2021-01-29 21:54:16,901 INFO] encoder: 42948608
+[2021-01-29 21:54:16,901 INFO] decoder: 74402666
+[2021-01-29 21:54:16,901 INFO] * number of parameters: 117351274
+[2021-01-29 21:54:16,908 INFO] Starting training on GPU: [0, 1, 2]
+[2021-01-29 21:54:16,908 INFO] Start training loop and validate every 500 steps...
+[2021-01-29 21:54:23,838 INFO] number of examples: 878269
+[2021-01-29 21:56:53,744 INFO] Step 100/202000; acc:   3.78; ppl: 3855.36; xent: 8.26; lr: 0.00010; 19519/22343 tok/s;    157 sec
+[2021-01-29 21:59:06,333 INFO] Step 200/202000; acc:   7.15; ppl: 363.21; xent: 5.89; lr: 0.00020; 23213/26551 tok/s;    289 sec
+[2021-01-29 22:01:18,340 INFO] Step 300/202000; acc:  13.80; ppl: 168.35; xent: 5.13; lr: 0.00030; 23155/26798 tok/s;    421 sec
+[2021-01-29 22:03:30,333 INFO] Step 400/202000; acc:  19.79; ppl: 84.18; xent: 4.43; lr: 0.00040; 23224/26726 tok/s;    553 sec
+[2021-01-29 22:05:42,849 INFO] Step 500/202000; acc:  22.84; ppl: 57.90; xent: 4.06; lr: 0.00050; 23227/26551 tok/s;    686 sec
+[2021-01-29 22:05:42,850 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-29 22:05:42,906 INFO] number of examples: 6594
+[2021-01-29 22:05:52,386 INFO] Validation perplexity: 83.1363
+[2021-01-29 22:05:52,387 INFO] Validation accuracy: 24.5997
+[2021-01-29 22:05:52,387 INFO] Model is improving acc: -inf --> 24.5997.
+[2021-01-29 22:05:52,387 INFO] Model is improving ppl: inf --> 83.1363.
+[2021-01-29 22:05:52,611 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_500.pt
+[2021-01-29 22:06:36,661 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.1.pt
+[2021-01-29 22:06:46,452 INFO] number of examples: 410180
+[2021-01-29 22:08:07,958 INFO] Step 600/202000; acc:  26.69; ppl: 42.60; xent: 3.75; lr: 0.00059; 21009/24064 tok/s;    831 sec
+[2021-01-29 22:10:19,966 INFO] Step 700/202000; acc:  33.40; ppl: 28.90; xent: 3.36; lr: 0.00069; 23049/26525 tok/s;    963 sec
+[2021-01-29 22:12:32,357 INFO] Step 800/202000; acc:  40.74; ppl: 19.46; xent: 2.97; lr: 0.00079; 23152/26405 tok/s;   1095 sec
+[2021-01-29 22:13:28,455 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.0.pt
+[2021-01-29 22:13:49,197 INFO] number of examples: 878269
+[2021-01-29 22:14:45,059 INFO] Step 900/202000; acc:  46.02; ppl: 14.26; xent: 2.66; lr: 0.00089; 23096/26541 tok/s;   1228 sec
+[2021-01-29 22:16:57,605 INFO] Step 1000/202000; acc:  50.01; ppl: 11.35; xent: 2.43; lr: 0.00099; 22909/26377 tok/s;   1361 sec
+[2021-01-29 22:16:57,606 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-29 22:16:57,729 INFO] number of examples: 6594
+[2021-01-29 22:17:07,205 INFO] Validation perplexity: 12.1002
+[2021-01-29 22:17:07,205 INFO] Validation accuracy: 53.8338
+[2021-01-29 22:17:07,205 INFO] Model is improving acc: 24.5997 --> 53.8338.
+[2021-01-29 22:17:07,205 INFO] Model is improving ppl: 83.1363 --> 12.1002.
+[2021-01-29 22:17:07,431 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_1000.pt
+[2021-01-29 22:19:21,975 INFO] Step 1100/202000; acc:  52.94; ppl:  9.53; xent: 2.25; lr: 0.00109; 21245/24316 tok/s;   1505 sec
+[2021-01-29 22:21:34,195 INFO] Step 1200/202000; acc:  56.10; ppl:  7.97; xent: 2.08; lr: 0.00119; 23187/26721 tok/s;   1637 sec
+[2021-01-29 22:23:46,311 INFO] Step 1300/202000; acc:  58.40; ppl:  7.01; xent: 1.95; lr: 0.00129; 23251/26686 tok/s;   1769 sec
+[2021-01-29 22:25:58,279 INFO] Step 1400/202000; acc:  59.64; ppl:  6.49; xent: 1.87; lr: 0.00138; 23174/26766 tok/s;   1901 sec
+[2021-01-29 22:28:10,895 INFO] Step 1500/202000; acc:  60.66; ppl:  6.08; xent: 1.80; lr: 0.00148; 23156/26425 tok/s;   2034 sec
+[2021-01-29 22:28:10,896 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-29 22:28:10,946 INFO] number of examples: 6594
+[2021-01-29 22:28:20,430 INFO] Validation perplexity: 6.46497
+[2021-01-29 22:28:20,431 INFO] Validation accuracy: 63.2625
+[2021-01-29 22:28:20,431 INFO] Model is improving acc: 53.8338 --> 63.2625.
+[2021-01-29 22:28:20,431 INFO] Model is improving ppl: 12.1002 --> 6.46497.
+[2021-01-29 22:28:20,656 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_1500.pt
+[2021-01-29 22:28:31,860 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.1.pt
+[2021-01-29 22:28:44,826 INFO] number of examples: 410180
+[2021-01-29 22:30:34,600 INFO] Step 1600/202000; acc:  61.88; ppl:  5.66; xent: 1.73; lr: 0.00158; 21155/24355 tok/s;   2178 sec
+[2021-01-29 22:32:47,025 INFO] Step 1700/202000; acc:  62.37; ppl:  5.47; xent: 1.70; lr: 0.00168; 23111/26473 tok/s;   2310 sec
+[2021-01-29 22:34:59,394 INFO] Step 1800/202000; acc:  63.14; ppl:  5.22; xent: 1.65; lr: 0.00178; 23087/26415 tok/s;   2442 sec
+[2021-01-29 22:35:23,462 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.0.pt
+[2021-01-29 22:35:44,347 INFO] number of examples: 878269
+[2021-01-29 22:37:11,907 INFO] Step 1900/202000; acc:  64.20; ppl:  4.91; xent: 1.59; lr: 0.00188; 23047/26522 tok/s;   2575 sec
+[2021-01-29 22:39:24,255 INFO] Step 2000/202000; acc:  64.51; ppl:  4.81; xent: 1.57; lr: 0.00198; 23060/26451 tok/s;   2707 sec
+[2021-01-29 22:39:24,256 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-29 22:39:24,357 INFO] number of examples: 6594
+[2021-01-29 22:39:33,841 INFO] Validation perplexity: 5.16393
+[2021-01-29 22:39:33,841 INFO] Validation accuracy: 66.5394
+[2021-01-29 22:39:33,841 INFO] Model is improving acc: 63.2625 --> 66.5394.
+[2021-01-29 22:39:33,841 INFO] Model is improving ppl: 6.46497 --> 5.16393.
+[2021-01-29 22:39:34,064 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_2000.pt
+[2021-01-29 22:41:47,819 INFO] Step 2100/202000; acc:  64.87; ppl:  4.68; xent: 1.54; lr: 0.00193; 21390/24471 tok/s;   2851 sec
+[2021-01-29 22:43:59,879 INFO] Step 2200/202000; acc:  65.98; ppl:  4.40; xent: 1.48; lr: 0.00188; 23224/26788 tok/s;   2983 sec
+[2021-01-29 22:46:11,795 INFO] Step 2300/202000; acc:  66.49; ppl:  4.27; xent: 1.45; lr: 0.00184; 23204/26667 tok/s;   3115 sec
+[2021-01-29 22:48:24,359 INFO] Step 2400/202000; acc:  67.08; ppl:  4.12; xent: 1.42; lr: 0.00180; 23190/26647 tok/s;   3247 sec
+[2021-01-29 22:50:14,702 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.1.pt
+[2021-01-29 22:50:23,024 INFO] number of examples: 410180
+[2021-01-29 22:50:37,349 INFO] Step 2500/202000; acc:  67.31; ppl:  4.04; xent: 1.40; lr: 0.00177; 23045/26375 tok/s;   3380 sec
+[2021-01-29 22:50:37,350 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-29 22:50:37,400 INFO] number of examples: 6594
+[2021-01-29 22:50:46,879 INFO] Validation perplexity: 4.46336
+[2021-01-29 22:50:46,879 INFO] Validation accuracy: 68.8354
+[2021-01-29 22:50:46,879 INFO] Model is improving acc: 66.5394 --> 68.8354.
+[2021-01-29 22:50:46,880 INFO] Model is improving ppl: 5.16393 --> 4.46336.
+[2021-01-29 22:50:47,103 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_2500.pt
+[2021-01-29 22:53:00,917 INFO] Step 2600/202000; acc:  67.79; ppl:  3.93; xent: 1.37; lr: 0.00173; 21068/24325 tok/s;   3524 sec
+[2021-01-29 22:55:13,165 INFO] Step 2700/202000; acc:  68.10; ppl:  3.84; xent: 1.35; lr: 0.00170; 23254/26537 tok/s;   3656 sec
+[2021-01-29 22:57:18,010 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.0.pt
+[2021-01-29 22:57:25,728 INFO] Step 2800/202000; acc:  68.30; ppl:  3.79; xent: 1.33; lr: 0.00167; 23038/26377 tok/s;   3789 sec
+[2021-01-29 22:57:40,660 INFO] number of examples: 878269
+[2021-01-29 22:59:38,145 INFO] Step 2900/202000; acc:  68.92; ppl:  3.67; xent: 1.30; lr: 0.00164; 22971/26513 tok/s;   3921 sec
+[2021-01-29 23:01:50,596 INFO] Step 3000/202000; acc:  69.03; ppl:  3.63; xent: 1.29; lr: 0.00161; 23102/26438 tok/s;   4054 sec
+[2021-01-29 23:01:50,597 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-29 23:01:50,692 INFO] number of examples: 6594
+[2021-01-29 23:02:00,183 INFO] Validation perplexity: 4.11454
+[2021-01-29 23:02:00,183 INFO] Validation accuracy: 70.019
+[2021-01-29 23:02:00,183 INFO] Model is improving acc: 68.8354 --> 70.019.
+[2021-01-29 23:02:00,183 INFO] Model is improving ppl: 4.46336 --> 4.11454.
+[2021-01-29 23:02:00,408 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_3000.pt
+[2021-01-29 23:04:14,300 INFO] Step 3100/202000; acc:  69.08; ppl:  3.61; xent: 1.28; lr: 0.00159; 21377/24462 tok/s;   4197 sec
+[2021-01-29 23:06:26,701 INFO] Step 3200/202000; acc:  69.76; ppl:  3.49; xent: 1.25; lr: 0.00156; 23136/26739 tok/s;   4330 sec
+[2021-01-29 23:08:38,712 INFO] Step 3300/202000; acc:  69.92; ppl:  3.45; xent: 1.24; lr: 0.00154; 23246/26713 tok/s;   4462 sec
+[2021-01-29 23:10:51,120 INFO] Step 3400/202000; acc:  70.09; ppl:  3.41; xent: 1.23; lr: 0.00152; 23202/26663 tok/s;   4594 sec
+[2021-01-29 23:12:09,778 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.1.pt
+[2021-01-29 23:12:18,028 INFO] number of examples: 410180
+[2021-01-29 23:13:04,033 INFO] Step 3500/202000; acc:  70.25; ppl:  3.38; xent: 1.22; lr: 0.00149; 23012/26301 tok/s;   4727 sec
+[2021-01-29 23:13:04,034 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-29 23:13:04,140 INFO] number of examples: 6594
+[2021-01-29 23:13:13,601 INFO] Validation perplexity: 3.87062
+[2021-01-29 23:13:13,602 INFO] Validation accuracy: 71.0071
+[2021-01-29 23:13:13,602 INFO] Model is improving acc: 70.019 --> 71.0071.
+[2021-01-29 23:13:13,602 INFO] Model is improving ppl: 4.11454 --> 3.87062.
+[2021-01-29 23:13:13,824 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_3500.pt
+[2021-01-29 23:15:27,459 INFO] Step 3600/202000; acc:  70.37; ppl:  3.35; xent: 1.21; lr: 0.00147; 21159/24368 tok/s;   4871 sec
+[2021-01-29 23:17:40,120 INFO] Step 3700/202000; acc:  70.46; ppl:  3.32; xent: 1.20; lr: 0.00145; 23119/26359 tok/s;   5003 sec
+[2021-01-29 23:19:13,315 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.0.pt
+[2021-01-29 23:19:37,930 INFO] number of examples: 878269
+[2021-01-29 23:19:52,797 INFO] Step 3800/202000; acc:  70.81; ppl:  3.27; xent: 1.18; lr: 0.00143; 23058/26545 tok/s;   5136 sec
+[2021-01-29 23:22:05,110 INFO] Step 3900/202000; acc:  71.00; ppl:  3.23; xent: 1.17; lr: 0.00142; 22950/26455 tok/s;   5268 sec
+[2021-01-29 23:24:17,558 INFO] Step 4000/202000; acc:  70.96; ppl:  3.23; xent: 1.17; lr: 0.00140; 23128/26450 tok/s;   5401 sec
+[2021-01-29 23:24:17,559 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-29 23:24:17,611 INFO] number of examples: 6594
+[2021-01-29 23:24:27,127 INFO] Validation perplexity: 3.75825
+[2021-01-29 23:24:27,127 INFO] Validation accuracy: 71.5311
+[2021-01-29 23:24:27,127 INFO] Model is improving acc: 71.0071 --> 71.5311.
+[2021-01-29 23:24:27,127 INFO] Model is improving ppl: 3.87062 --> 3.75825.
+[2021-01-29 23:24:27,350 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_4000.pt
+[2021-01-29 23:26:41,575 INFO] Step 4100/202000; acc:  71.15; ppl:  3.19; xent: 1.16; lr: 0.00138; 21364/24455 tok/s;   5545 sec
+[2021-01-29 23:28:53,480 INFO] Step 4200/202000; acc:  71.46; ppl:  3.14; xent: 1.14; lr: 0.00136; 23190/26790 tok/s;   5677 sec
+[2021-01-29 23:31:05,731 INFO] Step 4300/202000; acc:  71.66; ppl:  3.11; xent: 1.13; lr: 0.00135; 23174/26712 tok/s;   5809 sec
+[2021-01-29 23:33:18,230 INFO] Step 4400/202000; acc:  71.67; ppl:  3.10; xent: 1.13; lr: 0.00133; 23247/26587 tok/s;   5941 sec
+[2021-01-29 23:34:05,173 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.1.pt
+[2021-01-29 23:34:13,554 INFO] number of examples: 410180
+[2021-01-29 23:35:31,227 INFO] Step 4500/202000; acc:  71.88; ppl:  3.06; xent: 1.12; lr: 0.00132; 22922/26217 tok/s;   6074 sec
+[2021-01-29 23:35:31,228 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-29 23:35:31,331 INFO] number of examples: 6594
+[2021-01-29 23:35:40,799 INFO] Validation perplexity: 3.64498
+[2021-01-29 23:35:40,800 INFO] Validation accuracy: 71.9543
+[2021-01-29 23:35:40,800 INFO] Model is improving acc: 71.5311 --> 71.9543.
+[2021-01-29 23:35:40,800 INFO] Model is improving ppl: 3.75825 --> 3.64498.
+[2021-01-29 23:35:41,022 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_4500.pt
+[2021-01-29 23:37:54,335 INFO] Step 4600/202000; acc:  71.86; ppl:  3.06; xent: 1.12; lr: 0.00130; 21253/24480 tok/s;   6217 sec
+[2021-01-29 23:40:06,836 INFO] Step 4700/202000; acc:  71.86; ppl:  3.05; xent: 1.12; lr: 0.00129; 23132/26351 tok/s;   6350 sec
+[2021-01-29 23:41:08,232 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.0.pt
+[2021-01-29 23:41:29,976 INFO] number of examples: 878269
+[2021-01-29 23:42:19,227 INFO] Step 4800/202000; acc:  72.32; ppl:  2.99; xent: 1.10; lr: 0.00128; 23111/26621 tok/s;   6482 sec
+[2021-01-29 23:44:31,603 INFO] Step 4900/202000; acc:  72.34; ppl:  2.98; xent: 1.09; lr: 0.00126; 22996/26410 tok/s;   6615 sec
+[2021-01-29 23:46:44,409 INFO] Step 5000/202000; acc:  72.17; ppl:  3.00; xent: 1.10; lr: 0.00125; 23069/26466 tok/s;   6748 sec
+[2021-01-29 23:46:44,410 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-29 23:46:44,463 INFO] number of examples: 6594
+[2021-01-29 23:46:53,962 INFO] Validation perplexity: 3.56704
+[2021-01-29 23:46:53,962 INFO] Validation accuracy: 72.3793
+[2021-01-29 23:46:53,962 INFO] Model is improving acc: 71.9543 --> 72.3793.
+[2021-01-29 23:46:53,962 INFO] Model is improving ppl: 3.64498 --> 3.56704.
+[2021-01-29 23:46:54,186 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_5000.pt
+[2021-01-29 23:49:07,806 INFO] Step 5100/202000; acc:  72.37; ppl:  2.96; xent: 1.09; lr: 0.00124; 21358/24602 tok/s;   6891 sec
+[2021-01-29 23:51:19,777 INFO] Step 5200/202000; acc:  72.84; ppl:  2.91; xent: 1.07; lr: 0.00123; 23265/26719 tok/s;   7023 sec
+[2021-01-29 23:53:31,947 INFO] Step 5300/202000; acc:  72.83; ppl:  2.91; xent: 1.07; lr: 0.00121; 23153/26715 tok/s;   7155 sec
+[2021-01-29 23:55:44,611 INFO] Step 5400/202000; acc:  72.81; ppl:  2.90; xent: 1.06; lr: 0.00120; 23114/26445 tok/s;   7288 sec
+[2021-01-29 23:55:59,830 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.1.pt
+[2021-01-29 23:56:12,268 INFO] number of examples: 410180
+[2021-01-29 23:57:57,366 INFO] Step 5500/202000; acc:  72.96; ppl:  2.88; xent: 1.06; lr: 0.00119; 22992/26376 tok/s;   7420 sec
+[2021-01-29 23:57:57,367 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-29 23:57:57,470 INFO] number of examples: 6594
+[2021-01-29 23:58:06,937 INFO] Validation perplexity: 3.52044
+[2021-01-29 23:58:06,937 INFO] Validation accuracy: 72.5627
+[2021-01-29 23:58:06,937 INFO] Model is improving acc: 72.3793 --> 72.5627.
+[2021-01-29 23:58:06,937 INFO] Model is improving ppl: 3.56704 --> 3.52044.
+[2021-01-29 23:58:07,160 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_5500.pt
+[2021-01-30 00:00:21,223 INFO] Step 5600/202000; acc:  72.89; ppl:  2.88; xent: 1.06; lr: 0.00118; 21211/24328 tok/s;   7564 sec
+[2021-01-30 00:02:33,905 INFO] Step 5700/202000; acc:  72.88; ppl:  2.88; xent: 1.06; lr: 0.00117; 23048/26338 tok/s;   7697 sec
+[2021-01-30 00:03:03,481 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.0.pt
+[2021-01-30 00:03:23,118 INFO] number of examples: 878269
+[2021-01-30 00:04:46,476 INFO] Step 5800/202000; acc:  73.44; ppl:  2.81; xent: 1.03; lr: 0.00116; 23088/26551 tok/s;   7830 sec
+[2021-01-30 00:06:58,948 INFO] Step 5900/202000; acc:  73.24; ppl:  2.83; xent: 1.04; lr: 0.00115; 23015/26412 tok/s;   7962 sec
+[2021-01-30 00:09:11,528 INFO] Step 6000/202000; acc:  73.11; ppl:  2.84; xent: 1.04; lr: 0.00114; 23117/26494 tok/s;   8095 sec
+[2021-01-30 00:09:11,528 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-30 00:09:11,588 INFO] number of examples: 6594
+[2021-01-30 00:09:21,074 INFO] Validation perplexity: 3.4835
+[2021-01-30 00:09:21,074 INFO] Validation accuracy: 72.7094
+[2021-01-30 00:09:21,074 INFO] Model is improving acc: 72.5627 --> 72.7094.
+[2021-01-30 00:09:21,074 INFO] Model is improving ppl: 3.52044 --> 3.4835.
+[2021-01-30 00:09:21,299 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_6000.pt
+[2021-01-30 00:11:34,748 INFO] Step 6100/202000; acc:  73.50; ppl:  2.79; xent: 1.03; lr: 0.00113; 21420/24701 tok/s;   8238 sec
+[2021-01-30 00:13:46,371 INFO] Step 6200/202000; acc:  73.63; ppl:  2.77; xent: 1.02; lr: 0.00112; 23281/26728 tok/s;   8369 sec
+[2021-01-30 00:15:58,964 INFO] Step 6300/202000; acc:  73.73; ppl:  2.76; xent: 1.02; lr: 0.00111; 23144/26657 tok/s;   8502 sec
+[2021-01-30 00:17:54,537 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.1.pt
+[2021-01-30 00:18:06,968 INFO] number of examples: 410180
+[2021-01-30 00:18:11,727 INFO] Step 6400/202000; acc:  73.65; ppl:  2.76; xent: 1.01; lr: 0.00110; 23097/26412 tok/s;   8635 sec
+[2021-01-30 00:20:24,335 INFO] Step 6500/202000; acc:  73.74; ppl:  2.75; xent: 1.01; lr: 0.00110; 22867/26337 tok/s;   8767 sec
+[2021-01-30 00:20:24,336 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-30 00:20:24,434 INFO] number of examples: 6594
+[2021-01-30 00:20:33,893 INFO] Validation perplexity: 3.41174
+[2021-01-30 00:20:33,893 INFO] Validation accuracy: 73.014
+[2021-01-30 00:20:33,893 INFO] Model is improving acc: 72.7094 --> 73.014.
+[2021-01-30 00:20:33,893 INFO] Model is improving ppl: 3.4835 --> 3.41174.
+[2021-01-30 00:20:34,115 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_6500.pt
+[2021-01-30 00:22:47,721 INFO] Step 6600/202000; acc:  73.79; ppl:  2.74; xent: 1.01; lr: 0.00109; 21401/24465 tok/s;   8911 sec
+[2021-01-30 00:24:58,021 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.0.pt
+[2021-01-30 00:25:00,375 INFO] Step 6700/202000; acc:  73.84; ppl:  2.73; xent: 1.01; lr: 0.00108; 23036/26392 tok/s;   9043 sec
+[2021-01-30 00:25:18,218 INFO] number of examples: 878269
+[2021-01-30 00:27:12,801 INFO] Step 6800/202000; acc:  74.17; ppl:  2.69; xent: 0.99; lr: 0.00107; 22998/26512 tok/s;   9176 sec
+[2021-01-30 00:29:25,118 INFO] Step 6900/202000; acc:  74.01; ppl:  2.71; xent: 1.00; lr: 0.00106; 23086/26422 tok/s;   9308 sec
+[2021-01-30 00:31:37,635 INFO] Step 7000/202000; acc:  73.94; ppl:  2.71; xent: 1.00; lr: 0.00106; 23179/26540 tok/s;   9441 sec
+[2021-01-30 00:31:37,636 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-30 00:31:37,689 INFO] number of examples: 6594
+[2021-01-30 00:31:47,181 INFO] Validation perplexity: 3.40172
+[2021-01-30 00:31:47,182 INFO] Validation accuracy: 73.1013
+[2021-01-30 00:31:47,182 INFO] Model is improving acc: 73.014 --> 73.1013.
+[2021-01-30 00:31:47,182 INFO] Model is improving ppl: 3.41174 --> 3.40172.
+[2021-01-30 00:31:47,405 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_7000.pt
+[2021-01-30 00:34:01,074 INFO] Step 7100/202000; acc:  74.36; ppl:  2.66; xent: 0.98; lr: 0.00105; 21405/24683 tok/s;   9584 sec
+[2021-01-30 00:36:12,960 INFO] Step 7200/202000; acc:  74.41; ppl:  2.66; xent: 0.98; lr: 0.00104; 23208/26760 tok/s;   9716 sec
+[2021-01-30 00:38:25,632 INFO] Step 7300/202000; acc:  74.42; ppl:  2.65; xent: 0.98; lr: 0.00103; 23208/26616 tok/s;   9849 sec
+[2021-01-30 00:39:49,549 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.1.pt
+[2021-01-30 00:40:01,714 INFO] number of examples: 410180
+[2021-01-30 00:40:38,256 INFO] Step 7400/202000; acc:  74.42; ppl:  2.65; xent: 0.97; lr: 0.00103; 23013/26324 tok/s;   9981 sec
+[2021-01-30 00:42:50,733 INFO] Step 7500/202000; acc:  74.34; ppl:  2.65; xent: 0.98; lr: 0.00102; 22927/26366 tok/s;  10114 sec
+[2021-01-30 00:42:50,734 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-30 00:42:50,831 INFO] number of examples: 6594
+[2021-01-30 00:43:00,288 INFO] Validation perplexity: 3.38411
+[2021-01-30 00:43:00,288 INFO] Validation accuracy: 73.2925
+[2021-01-30 00:43:00,288 INFO] Model is improving acc: 73.1013 --> 73.2925.
+[2021-01-30 00:43:00,288 INFO] Model is improving ppl: 3.40172 --> 3.38411.
+[2021-01-30 00:43:00,512 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_7500.pt
+[2021-01-30 00:45:14,375 INFO] Step 7600/202000; acc:  74.43; ppl:  2.64; xent: 0.97; lr: 0.00101; 21345/24377 tok/s;  10257 sec
+[2021-01-30 00:46:52,689 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.0.pt
+[2021-01-30 00:47:12,018 INFO] number of examples: 878269
+[2021-01-30 00:47:26,990 INFO] Step 7700/202000; acc:  74.69; ppl:  2.62; xent: 0.96; lr: 0.00101; 23078/26531 tok/s;  10390 sec
+[2021-01-30 00:49:39,314 INFO] Step 7800/202000; acc:  74.74; ppl:  2.61; xent: 0.96; lr: 0.00100; 22931/26456 tok/s;  10522 sec
+[2021-01-30 00:51:51,994 INFO] Step 7900/202000; acc:  74.64; ppl:  2.61; xent: 0.96; lr: 0.00099; 23128/26421 tok/s;  10655 sec
+[2021-01-30 00:54:04,610 INFO] Step 8000/202000; acc:  74.71; ppl:  2.61; xent: 0.96; lr: 0.00099; 23181/26540 tok/s;  10788 sec
+[2021-01-30 00:54:04,611 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-30 00:54:04,721 INFO] number of examples: 6594
+[2021-01-30 00:54:14,190 INFO] Validation perplexity: 3.36392
+[2021-01-30 00:54:14,190 INFO] Validation accuracy: 73.3925
+[2021-01-30 00:54:14,191 INFO] Model is improving acc: 73.2925 --> 73.3925.
+[2021-01-30 00:54:14,191 INFO] Model is improving ppl: 3.38411 --> 3.36392.
+[2021-01-30 00:54:14,413 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_8000.pt
+[2021-01-30 00:56:27,540 INFO] Step 8100/202000; acc:  74.93; ppl:  2.58; xent: 0.95; lr: 0.00098; 21377/24724 tok/s;  10931 sec
+[2021-01-30 00:58:39,938 INFO] Step 8200/202000; acc:  75.04; ppl:  2.57; xent: 0.94; lr: 0.00098; 23151/26683 tok/s;  11063 sec
+[2021-01-30 01:00:52,419 INFO] Step 8300/202000; acc:  74.99; ppl:  2.57; xent: 0.94; lr: 0.00097; 23283/26589 tok/s;  11196 sec
+[2021-01-30 01:01:44,269 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.1.pt
+[2021-01-30 01:01:55,580 INFO] number of examples: 410180
+[2021-01-30 01:03:05,317 INFO] Step 8400/202000; acc:  75.06; ppl:  2.56; xent: 0.94; lr: 0.00096; 22909/26231 tok/s;  11328 sec
+[2021-01-30 01:05:17,352 INFO] Step 8500/202000; acc:  74.99; ppl:  2.57; xent: 0.94; lr: 0.00096; 23023/26539 tok/s;  11460 sec
+[2021-01-30 01:05:17,353 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-30 01:05:17,406 INFO] number of examples: 6594
+[2021-01-30 01:05:26,881 INFO] Validation perplexity: 3.35918
+[2021-01-30 01:05:26,881 INFO] Validation accuracy: 73.4719
+[2021-01-30 01:05:26,881 INFO] Model is improving acc: 73.3925 --> 73.4719.
+[2021-01-30 01:05:26,881 INFO] Model is improving ppl: 3.36392 --> 3.35918.
+[2021-01-30 01:05:27,106 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_8500.pt
+[2021-01-30 01:07:41,490 INFO] Step 8600/202000; acc:  75.04; ppl:  2.56; xent: 0.94; lr: 0.00095; 21300/24216 tok/s;  11605 sec
+[2021-01-30 01:08:48,267 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.0.pt
+[2021-01-30 01:09:12,295 INFO] number of examples: 878269
+[2021-01-30 01:09:54,205 INFO] Step 8700/202000; acc:  75.30; ppl:  2.54; xent: 0.93; lr: 0.00095; 23031/26600 tok/s;  11737 sec
+[2021-01-30 01:12:06,519 INFO] Step 8800/202000; acc:  75.32; ppl:  2.53; xent: 0.93; lr: 0.00094; 23008/26400 tok/s;  11870 sec
+[2021-01-30 01:14:19,271 INFO] Step 8900/202000; acc:  75.12; ppl:  2.55; xent: 0.93; lr: 0.00094; 23053/26459 tok/s;  12002 sec
+[2021-01-30 01:16:31,791 INFO] Step 9000/202000; acc:  75.23; ppl:  2.53; xent: 0.93; lr: 0.00093; 23160/26603 tok/s;  12135 sec
+[2021-01-30 01:16:31,792 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-30 01:16:31,898 INFO] number of examples: 6594
+[2021-01-30 01:16:41,361 INFO] Validation perplexity: 3.32437
+[2021-01-30 01:16:41,361 INFO] Validation accuracy: 73.4507
+[2021-01-30 01:16:41,361 INFO] Stalled patience: 4/5
+[2021-01-30 01:16:41,584 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_9000.pt
+[2021-01-30 01:18:54,729 INFO] Step 9100/202000; acc:  75.61; ppl:  2.50; xent: 0.92; lr: 0.00093; 21442/24705 tok/s;  12278 sec
+[2021-01-30 01:21:06,852 INFO] Step 9200/202000; acc:  75.54; ppl:  2.50; xent: 0.92; lr: 0.00092; 23212/26710 tok/s;  12410 sec
+[2021-01-30 01:23:19,467 INFO] Step 9300/202000; acc:  75.48; ppl:  2.51; xent: 0.92; lr: 0.00092; 23113/26454 tok/s;  12543 sec
+[2021-01-30 01:23:39,660 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.1.pt
+[2021-01-30 01:23:47,335 INFO] number of examples: 410180
+[2021-01-30 01:25:32,380 INFO] Step 9400/202000; acc:  75.59; ppl:  2.49; xent: 0.91; lr: 0.00091; 22975/26338 tok/s;  12675 sec
+[2021-01-30 01:27:44,819 INFO] Step 9500/202000; acc:  75.53; ppl:  2.50; xent: 0.92; lr: 0.00091; 22990/26432 tok/s;  12808 sec
+[2021-01-30 01:27:44,820 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-30 01:27:44,872 INFO] number of examples: 6594
+[2021-01-30 01:27:54,394 INFO] Validation perplexity: 3.32267
+[2021-01-30 01:27:54,395 INFO] Validation accuracy: 73.5896
+[2021-01-30 01:27:54,395 INFO] Model is improving acc: 73.4719 --> 73.5896.
+[2021-01-30 01:27:54,395 INFO] Model is improving ppl: 3.35918 --> 3.32267.
+[2021-01-30 01:27:54,617 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_9500.pt
+[2021-01-30 01:30:08,303 INFO] Step 9600/202000; acc:  75.52; ppl:  2.50; xent: 0.92; lr: 0.00090; 21352/24355 tok/s;  12951 sec
+[2021-01-30 01:30:43,091 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.0.pt
+[2021-01-30 01:31:06,573 INFO] number of examples: 878269
+[2021-01-30 01:32:20,808 INFO] Step 9700/202000; acc:  75.87; ppl:  2.46; xent: 0.90; lr: 0.00090; 23079/26570 tok/s;  13084 sec
+[2021-01-30 01:34:33,297 INFO] Step 9800/202000; acc:  75.85; ppl:  2.46; xent: 0.90; lr: 0.00089; 23005/26448 tok/s;  13216 sec
+[2021-01-30 01:36:46,166 INFO] Step 9900/202000; acc:  75.57; ppl:  2.49; xent: 0.91; lr: 0.00089; 23091/26399 tok/s;  13349 sec
+[2021-01-30 01:38:58,664 INFO] Step 10000/202000; acc:  75.86; ppl:  2.46; xent: 0.90; lr: 0.00088; 23131/26700 tok/s;  13482 sec
+[2021-01-30 01:38:58,665 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-30 01:38:58,767 INFO] number of examples: 6594
+[2021-01-30 01:39:08,230 INFO] Validation perplexity: 3.31552
+[2021-01-30 01:39:08,230 INFO] Validation accuracy: 73.687
+[2021-01-30 01:39:08,230 INFO] Model is improving acc: 73.5896 --> 73.687.
+[2021-01-30 01:39:08,230 INFO] Model is improving ppl: 3.32267 --> 3.31552.
+[2021-01-30 01:39:08,452 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_10000.pt
+[2021-01-30 01:41:21,787 INFO] Step 10100/202000; acc:  76.04; ppl:  2.44; xent: 0.89; lr: 0.00088; 21450/24605 tok/s;  13625 sec
+[2021-01-30 01:43:33,826 INFO] Step 10200/202000; acc:  76.02; ppl:  2.45; xent: 0.89; lr: 0.00088; 23191/26763 tok/s;  13757 sec
+[2021-01-30 01:45:34,938 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.1.pt
+[2021-01-30 01:45:46,411 INFO] Step 10300/202000; acc:  75.97; ppl:  2.44; xent: 0.89; lr: 0.00087; 23122/26429 tok/s;  13890 sec
+[2021-01-30 01:45:47,815 INFO] number of examples: 410180
+[2021-01-30 01:47:59,112 INFO] Step 10400/202000; acc:  76.00; ppl:  2.44; xent: 0.89; lr: 0.00087; 22865/26330 tok/s;  14022 sec
+[2021-01-30 01:50:11,393 INFO] Step 10500/202000; acc:  76.04; ppl:  2.44; xent: 0.89; lr: 0.00086; 23182/26513 tok/s;  14154 sec
+[2021-01-30 01:50:11,394 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-30 01:50:11,446 INFO] number of examples: 6594
+[2021-01-30 01:50:20,948 INFO] Validation perplexity: 3.31026
+[2021-01-30 01:50:20,949 INFO] Validation accuracy: 73.6642
+[2021-01-30 01:50:20,949 INFO] Stalled patience: 4/5
+[2021-01-30 01:50:21,171 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_10500.pt
+[2021-01-30 01:52:35,164 INFO] Step 10600/202000; acc:  76.03; ppl:  2.44; xent: 0.89; lr: 0.00086; 21244/24325 tok/s;  14298 sec
+[2021-01-30 01:52:37,975 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.0.pt
+[2021-01-30 01:52:58,033 INFO] number of examples: 878269
+[2021-01-30 01:54:47,439 INFO] Step 10700/202000; acc:  76.39; ppl:  2.40; xent: 0.88; lr: 0.00085; 23113/26591 tok/s;  14431 sec
+[2021-01-30 01:56:59,584 INFO] Step 10800/202000; acc:  76.14; ppl:  2.42; xent: 0.88; lr: 0.00085; 23029/26451 tok/s;  14563 sec
+[2021-01-30 01:59:12,212 INFO] Step 10900/202000; acc:  76.09; ppl:  2.43; xent: 0.89; lr: 0.00085; 23199/26522 tok/s;  14695 sec
+[2021-01-30 02:01:24,639 INFO] Step 11000/202000; acc:  76.38; ppl:  2.40; xent: 0.87; lr: 0.00084; 23177/26732 tok/s;  14828 sec
+[2021-01-30 02:01:24,640 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-30 02:01:24,738 INFO] number of examples: 6594
+[2021-01-30 02:01:34,202 INFO] Validation perplexity: 3.29807
+[2021-01-30 02:01:34,202 INFO] Validation accuracy: 73.7228
+[2021-01-30 02:01:34,202 INFO] Model is improving acc: 73.687 --> 73.7228.
+[2021-01-30 02:01:34,202 INFO] Model is improving ppl: 3.31552 --> 3.29807.
+[2021-01-30 02:01:34,425 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_11000.pt
+[2021-01-30 02:03:47,722 INFO] Step 11100/202000; acc:  76.50; ppl:  2.39; xent: 0.87; lr: 0.00084; 21387/24622 tok/s;  14971 sec
+[2021-01-30 02:06:00,289 INFO] Step 11200/202000; acc:  76.41; ppl:  2.40; xent: 0.87; lr: 0.00084; 23236/26650 tok/s;  15103 sec
+[2021-01-30 02:07:29,685 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.1.pt
+[2021-01-30 02:07:38,569 INFO] number of examples: 410180
+[2021-01-30 02:08:12,936 INFO] Step 11300/202000; acc:  76.42; ppl:  2.39; xent: 0.87; lr: 0.00083; 22991/26331 tok/s;  15236 sec
+[2021-01-30 02:10:25,313 INFO] Step 11400/202000; acc:  76.36; ppl:  2.40; xent: 0.87; lr: 0.00083; 22933/26389 tok/s;  15368 sec
+[2021-01-30 02:12:37,779 INFO] Step 11500/202000; acc:  76.42; ppl:  2.39; xent: 0.87; lr: 0.00082; 23162/26446 tok/s;  15501 sec
+[2021-01-30 02:12:37,780 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-30 02:12:37,833 INFO] number of examples: 6594
+[2021-01-30 02:12:47,335 INFO] Validation perplexity: 3.27927
+[2021-01-30 02:12:47,335 INFO] Validation accuracy: 73.7403
+[2021-01-30 02:12:47,335 INFO] Model is improving acc: 73.7228 --> 73.7403.
+[2021-01-30 02:12:47,335 INFO] Model is improving ppl: 3.29807 --> 3.27927.
+[2021-01-30 02:12:47,559 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_11500.pt
+[2021-01-30 02:14:32,834 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.0.pt
+[2021-01-30 02:14:54,472 INFO] number of examples: 878269
+[2021-01-30 02:15:01,671 INFO] Step 11600/202000; acc:  76.56; ppl:  2.38; xent: 0.87; lr: 0.00082; 21271/24424 tok/s;  15645 sec
+[2021-01-30 02:17:14,058 INFO] Step 11700/202000; acc:  76.67; ppl:  2.36; xent: 0.86; lr: 0.00082; 22919/26474 tok/s;  15777 sec
+[2021-01-30 02:19:26,331 INFO] Step 11800/202000; acc:  76.59; ppl:  2.37; xent: 0.86; lr: 0.00081; 23186/26483 tok/s;  15909 sec
+[2021-01-30 02:21:39,041 INFO] Step 11900/202000; acc:  76.54; ppl:  2.38; xent: 0.87; lr: 0.00081; 23164/26515 tok/s;  16042 sec
+[2021-01-30 02:23:51,034 INFO] Step 12000/202000; acc:  76.77; ppl:  2.35; xent: 0.86; lr: 0.00081; 23151/26784 tok/s;  16174 sec
+[2021-01-30 02:23:51,035 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-30 02:23:51,134 INFO] number of examples: 6594
+[2021-01-30 02:24:00,600 INFO] Validation perplexity: 3.30324
+[2021-01-30 02:24:00,600 INFO] Validation accuracy: 73.8333
+[2021-01-30 02:24:00,600 INFO] Stalled patience: 4/5
+[2021-01-30 02:24:00,824 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_12000.pt
+[2021-01-30 02:26:14,650 INFO] Step 12100/202000; acc:  76.85; ppl:  2.35; xent: 0.85; lr: 0.00080; 21376/24604 tok/s;  16318 sec
+[2021-01-30 02:28:27,140 INFO] Step 12200/202000; acc:  76.81; ppl:  2.35; xent: 0.85; lr: 0.00080; 23288/26611 tok/s;  16450 sec
+[2021-01-30 02:29:24,739 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.1.pt
+[2021-01-30 02:29:36,142 INFO] number of examples: 410180
+[2021-01-30 02:30:40,169 INFO] Step 12300/202000; acc:  76.82; ppl:  2.35; xent: 0.85; lr: 0.00080; 22864/26208 tok/s;  16583 sec
+[2021-01-30 02:32:52,400 INFO] Step 12400/202000; acc:  76.76; ppl:  2.35; xent: 0.85; lr: 0.00079; 23015/26462 tok/s;  16715 sec
+[2021-01-30 02:35:04,956 INFO] Step 12500/202000; acc:  76.80; ppl:  2.34; xent: 0.85; lr: 0.00079; 23132/26362 tok/s;  16848 sec
+[2021-01-30 02:35:04,957 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-30 02:35:05,069 INFO] number of examples: 6594
+[2021-01-30 02:35:14,531 INFO] Validation perplexity: 3.29523
+[2021-01-30 02:35:14,531 INFO] Validation accuracy: 73.7789
+[2021-01-30 02:35:14,531 INFO] Stalled patience: 3/5
+[2021-01-30 02:35:14,754 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_12500.pt
+[2021-01-30 02:36:27,919 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.0.pt
+[2021-01-30 02:36:51,910 INFO] number of examples: 878269
+[2021-01-30 02:37:28,441 INFO] Step 12600/202000; acc:  77.05; ppl:  2.33; xent: 0.84; lr: 0.00079; 21324/24570 tok/s;  16992 sec
+[2021-01-30 02:39:41,005 INFO] Step 12700/202000; acc:  77.02; ppl:  2.32; xent: 0.84; lr: 0.00078; 22916/26377 tok/s;  17124 sec
+[2021-01-30 02:41:53,673 INFO] Step 12800/202000; acc:  76.79; ppl:  2.34; xent: 0.85; lr: 0.00078; 23100/26446 tok/s;  17257 sec
+[2021-01-30 02:44:06,147 INFO] Step 12900/202000; acc:  76.99; ppl:  2.33; xent: 0.84; lr: 0.00078; 23176/26597 tok/s;  17389 sec
+[2021-01-30 02:46:18,118 INFO] Step 13000/202000; acc:  77.22; ppl:  2.31; xent: 0.84; lr: 0.00078; 23235/26784 tok/s;  17521 sec
+[2021-01-30 02:46:18,119 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-30 02:46:18,173 INFO] number of examples: 6594
+[2021-01-30 02:46:27,650 INFO] Validation perplexity: 3.3119
+[2021-01-30 02:46:27,650 INFO] Validation accuracy: 73.8603
+[2021-01-30 02:46:27,651 INFO] Stalled patience: 2/5
+[2021-01-30 02:46:27,877 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_13000.pt
+[2021-01-30 02:48:41,427 INFO] Step 13100/202000; acc:  77.19; ppl:  2.31; xent: 0.84; lr: 0.00077; 21353/24645 tok/s;  17665 sec
+[2021-01-30 02:50:54,193 INFO] Step 13200/202000; acc:  77.09; ppl:  2.32; xent: 0.84; lr: 0.00077; 23149/26433 tok/s;  17797 sec
+[2021-01-30 02:51:19,817 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.1.pt
+[2021-01-30 02:51:28,435 INFO] number of examples: 410180
+[2021-01-30 02:53:07,295 INFO] Step 13300/202000; acc:  77.23; ppl:  2.30; xent: 0.83; lr: 0.00077; 22965/26283 tok/s;  17930 sec
+[2021-01-30 02:55:19,318 INFO] Step 13400/202000; acc:  77.09; ppl:  2.31; xent: 0.84; lr: 0.00076; 22984/26503 tok/s;  18062 sec
+[2021-01-30 02:57:31,816 INFO] Step 13500/202000; acc:  77.11; ppl:  2.31; xent: 0.84; lr: 0.00076; 23183/26380 tok/s;  18195 sec
+[2021-01-30 02:57:31,817 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-30 02:57:31,923 INFO] number of examples: 6594
+[2021-01-30 02:57:41,381 INFO] Validation perplexity: 3.27792
+[2021-01-30 02:57:41,381 INFO] Validation accuracy: 73.8579
+[2021-01-30 02:57:41,381 INFO] Model is improving acc: 73.7403 --> 73.8579.
+[2021-01-30 02:57:41,381 INFO] Model is improving ppl: 3.27927 --> 3.27792.
+[2021-01-30 02:57:41,604 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_13500.pt
+[2021-01-30 02:58:23,368 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.0.pt
+[2021-01-30 02:58:47,857 INFO] number of examples: 878269
+[2021-01-30 02:59:55,952 INFO] Step 13600/202000; acc:  77.44; ppl:  2.28; xent: 0.83; lr: 0.00076; 21187/24432 tok/s;  18339 sec
+[2021-01-30 03:02:08,357 INFO] Step 13700/202000; acc:  77.40; ppl:  2.29; xent: 0.83; lr: 0.00076; 23015/26441 tok/s;  18471 sec
+[2021-01-30 03:04:21,167 INFO] Step 13800/202000; acc:  77.12; ppl:  2.31; xent: 0.84; lr: 0.00075; 23123/26434 tok/s;  18604 sec
+[2021-01-30 03:06:33,456 INFO] Step 13900/202000; acc:  77.38; ppl:  2.29; xent: 0.83; lr: 0.00075; 23144/26713 tok/s;  18737 sec
+[2021-01-30 03:08:45,229 INFO] Step 14000/202000; acc:  77.55; ppl:  2.27; xent: 0.82; lr: 0.00075; 23287/26729 tok/s;  18868 sec
+[2021-01-30 03:08:45,230 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-30 03:08:45,283 INFO] number of examples: 6594
+[2021-01-30 03:08:54,762 INFO] Validation perplexity: 3.29437
+[2021-01-30 03:08:54,762 INFO] Validation accuracy: 73.8989
+[2021-01-30 03:08:54,762 INFO] Stalled patience: 4/5
+[2021-01-30 03:08:54,983 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_14000.pt
+[2021-01-30 03:11:08,585 INFO] Step 14100/202000; acc:  77.49; ppl:  2.28; xent: 0.82; lr: 0.00074; 21388/24645 tok/s;  19012 sec
+[2021-01-30 03:13:14,890 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.1.pt
+[2021-01-30 03:13:21,329 INFO] Step 14200/202000; acc:  77.46; ppl:  2.28; xent: 0.82; lr: 0.00074; 23102/26410 tok/s;  19144 sec
+[2021-01-30 03:13:22,986 INFO] number of examples: 410180
+[2021-01-30 03:15:34,167 INFO] Step 14300/202000; acc:  77.46; ppl:  2.28; xent: 0.82; lr: 0.00074; 22815/26297 tok/s;  19277 sec
+[2021-01-30 03:17:46,510 INFO] Step 14400/202000; acc:  77.55; ppl:  2.27; xent: 0.82; lr: 0.00074; 23162/26519 tok/s;  19410 sec
+[2021-01-30 03:19:59,178 INFO] Step 14500/202000; acc:  77.46; ppl:  2.27; xent: 0.82; lr: 0.00073; 23038/26383 tok/s;  19542 sec
+[2021-01-30 03:19:59,178 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-30 03:19:59,283 INFO] number of examples: 6594
+[2021-01-30 03:20:08,754 INFO] Validation perplexity: 3.3036
+[2021-01-30 03:20:08,754 INFO] Validation accuracy: 73.8891
+[2021-01-30 03:20:08,754 INFO] Stalled patience: 3/5
+[2021-01-30 03:20:08,978 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_14500.pt
+[2021-01-30 03:20:18,262 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.0.pt
+[2021-01-30 03:20:40,695 INFO] number of examples: 878269
+[2021-01-30 03:22:22,624 INFO] Step 14600/202000; acc:  77.79; ppl:  2.25; xent: 0.81; lr: 0.00073; 21299/24486 tok/s;  19686 sec
+[2021-01-30 03:24:35,039 INFO] Step 14700/202000; acc:  77.59; ppl:  2.26; xent: 0.82; lr: 0.00073; 23029/26427 tok/s;  19818 sec
+[2021-01-30 03:26:47,831 INFO] Step 14800/202000; acc:  77.48; ppl:  2.27; xent: 0.82; lr: 0.00073; 23098/26477 tok/s;  19951 sec
+[2021-01-30 03:29:00,178 INFO] Step 14900/202000; acc:  77.77; ppl:  2.25; xent: 0.81; lr: 0.00072; 23218/26725 tok/s;  20083 sec
+[2021-01-30 03:31:11,999 INFO] Step 15000/202000; acc:  77.87; ppl:  2.24; xent: 0.81; lr: 0.00072; 23213/26729 tok/s;  20215 sec
+[2021-01-30 03:31:12,000 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-30 03:31:12,052 INFO] number of examples: 6594
+[2021-01-30 03:31:21,522 INFO] Validation perplexity: 3.29844
+[2021-01-30 03:31:21,522 INFO] Validation accuracy: 73.8866
+[2021-01-30 03:31:21,522 INFO] Stalled patience: 2/5
+[2021-01-30 03:31:21,746 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_15000.pt
+[2021-01-30 03:33:35,597 INFO] Step 15100/202000; acc:  77.78; ppl:  2.25; xent: 0.81; lr: 0.00072; 21420/24601 tok/s;  20359 sec
+[2021-01-30 03:35:10,158 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.1.pt
+[2021-01-30 03:35:17,918 INFO] number of examples: 410180
+[2021-01-30 03:35:48,277 INFO] Step 15200/202000; acc:  77.77; ppl:  2.24; xent: 0.81; lr: 0.00072; 23024/26337 tok/s;  20491 sec
+[2021-01-30 03:38:00,896 INFO] Step 15300/202000; acc:  77.75; ppl:  2.25; xent: 0.81; lr: 0.00071; 22857/26369 tok/s;  20624 sec
+[2021-01-30 03:40:13,650 INFO] Step 15400/202000; acc:  77.78; ppl:  2.24; xent: 0.81; lr: 0.00071; 23188/26420 tok/s;  20757 sec
+[2021-01-30 03:42:02,344 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.train.0.pt
+[2021-01-30 03:42:23,619 INFO] number of examples: 878269
+[2021-01-30 03:42:26,032 INFO] Step 15500/202000; acc:  77.88; ppl:  2.24; xent: 0.80; lr: 0.00071; 23100/26468 tok/s;  20889 sec
+[2021-01-30 03:42:26,033 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-30 03:42:26,133 INFO] number of examples: 6594
+[2021-01-30 03:42:35,731 INFO] Validation perplexity: 3.32781
+[2021-01-30 03:42:35,731 INFO] Validation accuracy: 73.9214
+[2021-01-30 03:42:35,731 INFO] Stalled patience: 1/5
+[2021-01-30 03:42:35,954 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_15500.pt
+[2021-01-30 03:44:49,530 INFO] Step 15600/202000; acc:  78.01; ppl:  2.22; xent: 0.80; lr: 0.00071; 21099/24430 tok/s;  21033 sec
+[2021-01-30 03:47:02,050 INFO] Step 15700/202000; acc:  77.92; ppl:  2.23; xent: 0.80; lr: 0.00071; 23191/26433 tok/s;  21165 sec
+[2021-01-30 03:49:14,503 INFO] Step 15800/202000; acc:  77.82; ppl:  2.24; xent: 0.81; lr: 0.00070; 23173/26584 tok/s;  21298 sec
+[2021-01-30 03:51:26,786 INFO] Step 15900/202000; acc:  78.06; ppl:  2.22; xent: 0.80; lr: 0.00070; 23120/26710 tok/s;  21430 sec
+[2021-01-30 03:53:39,304 INFO] Step 16000/202000; acc:  78.12; ppl:  2.21; xent: 0.79; lr: 0.00070; 23136/26648 tok/s;  21562 sec
+[2021-01-30 03:53:39,305 INFO] Loading dataset from /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/data/ready_to_train.valid.0.pt
+[2021-01-30 03:53:39,358 INFO] number of examples: 6594
+[2021-01-30 03:53:48,831 INFO] Validation perplexity: 3.3041
+[2021-01-30 03:53:48,832 INFO] Validation accuracy: 73.9126
+[2021-01-30 03:53:48,832 INFO] Stalled patience: 0/5
+[2021-01-30 03:53:48,832 INFO] Training finished after stalled validations. Early Stop!
+[2021-01-30 03:53:48,832 INFO] Best model found at step 13500
+[2021-01-30 03:53:49,070 INFO] Saving checkpoint /home/shterion/EcoNMT/engines/EN-FR-TRANS-BPE/model/model_step_16000.pt

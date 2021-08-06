@@ -1,0 +1,70 @@
+Appliance	Min	Max	avg	std
+Electric shower 	7000	10500	8750	0
+Immersion heater 	3000	3000	3000	0
+Kettle 	2200	3000	2600	0
+Electric fire 	2000	3000	2500	0
+Tumble dryer 	2000	3000	2500	0
+ashing machine 	1200	3000	2100	0
+Oven 	2000	2200	2100	0
+Oil-filled radiator 	1500	2500	2000	0
+Grill/hob 	1000	2000	1500	0
+Iron 	1000	1800	1400	0
+Dishwasher 	1050	1500	1275	0
+Deep fryer 	1200	1200	1200	0
+Toaster 	800	1500	1150	0
+Microwave 	600	1500	1050	0
+Electric mower 	500	1500	1000	0
+Hairdryer 	1000	1000	1000	0
+Electric drill 	900	1000	950	0
+Vacuum cleaner 	500	1200	850	0
+Dehumidifier 	300	700	500	0
+Plasma TV 	280	450	365	0
+Fridge/freezer 	200	400	300	0
+Towel rail 	250	250	250	0
+Heating blanket 	130	200	165	0
+LCD TV 	120	200	160	0
+Freezer 	150	150	150	0
+P100 (general)	30	250	140	0
+1080Ti (general)	13	250	131.5	0
+Games console 	45	190	117.5	0
+Desktop computer 	80	150	115	0
+Fridge 	40	120	80	0
+Video, DVD or CD 	20	60	40	0
+TV box 	30	40	35	0
+Laptop 	20	50	35	0
+Extractor fan 	5	36	20.5	0
+Tablet (charge) 	10	10	10	0
+Broadband router 	7	10	8.5	0
+Smart phone (charge) 	2.5	5	3.75	0
+1080Ti (LSTM – EN-FR)	0	0	0	0
+1080Ti (LSTM – EN-ES)	0	0	0	0
+1080Ti (LSTM – FR-EN)	0	0	0	0
+1080Ti (LSTM – ES-EN)	0	0	0	0
+1080Ti (TRANS – EN-FR)	0	0	0	0
+1080Ti (TRANS – EN-ES)	0	0	0	0
+1080Ti (TRANS – FR-EN)	0	0	0	0
+1080Ti (TRANS – ES-EN)	0	0	0	0
+P100 (LSTM – EN-FR)	0	0	0	0
+P100 (LSTM – EN-ES)	0	0	0	0
+P100 (LSTM – FR-EN)	0	0	0	0
+P100 (LSTM – ES-EN)	0	0	0	0
+P100 (TRANS – EN-FR)	0	0	0	0
+P100 (TRANS – EN-ES)	0	0	0	0
+P100 (TRANS – FR-EN)	0	0	0	0
+P100 (TRANS – ES-EN)	0	0	0	0
+1080Ti (LSTM – EN-FR Translate)	0	0	0	0
+1080Ti (LSTM – EN-ES Translate)	0	0	0	0
+1080Ti (LSTM – FR-EN Translate)	0	0	0	0
+1080Ti (LSTM – ES-EN Translate)	0	0	0	0
+1080Ti (TRANS – EN-FR Translate)	0	0	0	0
+1080Ti (TRANS – EN-ES Translate)	0	0	0	0
+1080Ti (TRANS – FR-EN Translate)	0	0	0	0
+1080Ti (TRANS – ES-EN Translate)	0	0	0	0
+P100 (LSTM – EN-FR Translate)	0	0	0	0
+P100 (LSTM – EN-ES Translate)	0	0	0	0
+P100 (LSTM – FR-EN Translate)	0	0	0	0
+P100 (LSTM – ES-EN Translate)	0	0	0	0
+P100 (TRANS – EN-FR Translate)	0	0	0	0
+P100 (TRANS – EN-ES Translate)	0	0	0	0
+P100 (TRANS – FR-EN Translate)	0	0	0	0
+P100 (TRANS – ES-EN Translate)	0	0	0	0

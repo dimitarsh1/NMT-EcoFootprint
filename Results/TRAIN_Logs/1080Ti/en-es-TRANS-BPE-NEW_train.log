@@ -1,0 +1,935 @@
+[2019-10-05 19:23:16,118 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.0.pt
+[2019-10-05 19:23:16,245 INFO]  * src vocab size = 47028
+[2019-10-05 19:23:16,245 INFO]  * tgt vocab size = 48889
+[2019-10-05 19:23:16,245 INFO] Building model...
+[2019-10-05 19:23:21,394 INFO] NMTModel(
+  (encoder): TransformerEncoder(
+    (embeddings): Embeddings(
+      (make_embedding): Sequential(
+        (emb_luts): Elementwise(
+          (0): Embedding(47028, 512, padding_idx=1)
+        )
+        (pe): PositionalEncoding(
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (transformer): ModuleList(
+      (0): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (1): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (2): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (3): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (4): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (5): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+    )
+    (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+  )
+  (decoder): TransformerDecoder(
+    (embeddings): Embeddings(
+      (make_embedding): Sequential(
+        (emb_luts): Elementwise(
+          (0): Embedding(48889, 512, padding_idx=1)
+        )
+        (pe): PositionalEncoding(
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (transformer_layers): ModuleList(
+      (0): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm_1): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (layer_norm_2): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (drop): Dropout(p=0.1, inplace=False)
+      )
+      (1): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm_1): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (layer_norm_2): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (drop): Dropout(p=0.1, inplace=False)
+      )
+      (2): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm_1): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (layer_norm_2): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (drop): Dropout(p=0.1, inplace=False)
+      )
+      (3): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm_1): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (layer_norm_2): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (drop): Dropout(p=0.1, inplace=False)
+      )
+      (4): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm_1): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (layer_norm_2): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (drop): Dropout(p=0.1, inplace=False)
+      )
+      (5): TransformerDecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (context_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=512, out_features=512, bias=True)
+          (linear_values): Linear(in_features=512, out_features=512, bias=True)
+          (linear_query): Linear(in_features=512, out_features=512, bias=True)
+          (softmax): Softmax(dim=-1)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (final_linear): Linear(in_features=512, out_features=512, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=512, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=512, bias=True)
+          (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1, inplace=False)
+          (relu): ReLU()
+          (dropout_2): Dropout(p=0.1, inplace=False)
+        )
+        (layer_norm_1): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (layer_norm_2): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+        (drop): Dropout(p=0.1, inplace=False)
+      )
+    )
+    (layer_norm): LayerNorm((512,), eps=1e-06, elementwise_affine=True)
+  )
+  (generator): Sequential(
+    (0): Linear(in_features=512, out_features=48889, bias=True)
+    (1): Cast()
+    (2): LogSoftmax()
+  )
+)
+[2019-10-05 19:23:21,397 INFO] encoder: 42993664
+[2019-10-05 19:23:21,397 INFO] decoder: 75336441
+[2019-10-05 19:23:21,397 INFO] * number of parameters: 118330105
+[2019-10-05 19:23:21,400 INFO] Starting training on GPU: [0, 1, 2, 3]
+[2019-10-05 19:23:21,400 INFO] Start training loop and validate every 500 steps...
+[2019-10-05 19:23:28,819 INFO] number of examples: 892901
+[2019-10-05 19:25:26,889 INFO] Step 100/202000; acc:   4.57; ppl: 3956.18; xent: 8.28; lr: 0.00010; 22460/24573 tok/s;    125 sec
+[2019-10-05 19:27:11,497 INFO] Step 200/202000; acc:   7.18; ppl: 370.14; xent: 5.91; lr: 0.00020; 27148/29414 tok/s;    230 sec
+[2019-10-05 19:28:57,296 INFO] Step 300/202000; acc:  14.11; ppl: 198.96; xent: 5.29; lr: 0.00030; 26585/29110 tok/s;    336 sec
+[2019-10-05 19:30:42,465 INFO] Step 400/202000; acc:  18.02; ppl: 121.20; xent: 4.80; lr: 0.00040; 26928/29122 tok/s;    441 sec
+[2019-10-05 19:32:28,097 INFO] Step 500/202000; acc:  21.05; ppl: 84.88; xent: 4.44; lr: 0.00050; 26720/29064 tok/s;    547 sec
+[2019-10-05 19:32:28,098 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 19:32:28,131 INFO] number of examples: 5006
+[2019-10-05 19:32:36,084 INFO] Validation perplexity: 132.31
+[2019-10-05 19:32:36,084 INFO] Validation accuracy: 22.6365
+[2019-10-05 19:32:36,084 INFO] Model is improving acc: -inf --> 22.6365.
+[2019-10-05 19:32:36,084 INFO] Model is improving ppl: inf --> 132.31.
+[2019-10-05 19:32:36,295 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_500.pt
+[2019-10-05 19:33:24,902 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.1.pt
+[2019-10-05 19:33:30,795 INFO] number of examples: 421684
+[2019-10-05 19:34:22,835 INFO] Step 600/202000; acc:  23.69; ppl: 64.12; xent: 4.16; lr: 0.00059; 24290/26867 tok/s;    661 sec
+[2019-10-05 19:36:07,574 INFO] Step 700/202000; acc:  26.69; ppl: 49.92; xent: 3.91; lr: 0.00069; 26737/28889 tok/s;    766 sec
+[2019-10-05 19:37:53,014 INFO] Step 800/202000; acc:  31.58; ppl: 36.59; xent: 3.60; lr: 0.00079; 26519/28944 tok/s;    872 sec
+[2019-10-05 19:39:35,994 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.0.pt
+[2019-10-05 19:39:38,042 INFO] Step 900/202000; acc:  37.95; ppl: 25.51; xent: 3.24; lr: 0.00089; 26704/29171 tok/s;    977 sec
+[2019-10-05 19:39:54,905 INFO] number of examples: 892901
+[2019-10-05 19:41:23,891 INFO] Step 1000/202000; acc:  43.41; ppl: 18.59; xent: 2.92; lr: 0.00099; 26615/28953 tok/s;   1082 sec
+[2019-10-05 19:41:23,891 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 19:41:23,961 INFO] number of examples: 5006
+[2019-10-05 19:41:31,429 INFO] Validation perplexity: 21.095
+[2019-10-05 19:41:31,430 INFO] Validation accuracy: 47.602
+[2019-10-05 19:41:31,430 INFO] Model is improving acc: 22.6365 --> 47.602.
+[2019-10-05 19:41:31,430 INFO] Model is improving ppl: 132.31 --> 21.095.
+[2019-10-05 19:41:31,639 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_1000.pt
+[2019-10-05 19:43:18,647 INFO] Step 1100/202000; acc:  47.24; ppl: 14.64; xent: 2.68; lr: 0.00109; 24616/26757 tok/s;   1197 sec
+[2019-10-05 19:45:04,028 INFO] Step 1200/202000; acc:  50.74; ppl: 11.75; xent: 2.46; lr: 0.00119; 26736/29253 tok/s;   1303 sec
+[2019-10-05 19:46:49,776 INFO] Step 1300/202000; acc:  53.13; ppl: 10.16; xent: 2.32; lr: 0.00129; 26840/29094 tok/s;   1408 sec
+[2019-10-05 19:48:35,582 INFO] Step 1400/202000; acc:  55.09; ppl:  9.02; xent: 2.20; lr: 0.00138; 26581/29118 tok/s;   1514 sec
+[2019-10-05 19:50:20,870 INFO] Step 1500/202000; acc:  57.37; ppl:  7.85; xent: 2.06; lr: 0.00148; 26919/29076 tok/s;   1619 sec
+[2019-10-05 19:50:20,871 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 19:50:20,901 INFO] number of examples: 5006
+[2019-10-05 19:50:28,534 INFO] Validation perplexity: 8.5369
+[2019-10-05 19:50:28,534 INFO] Validation accuracy: 60.1839
+[2019-10-05 19:50:28,534 INFO] Model is improving acc: 47.602 --> 60.1839.
+[2019-10-05 19:50:28,534 INFO] Model is improving ppl: 21.095 --> 8.5369.
+[2019-10-05 19:50:28,745 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_1500.pt
+[2019-10-05 19:52:15,831 INFO] Step 1600/202000; acc:  58.47; ppl:  7.29; xent: 1.99; lr: 0.00158; 24528/26706 tok/s;   1734 sec
+[2019-10-05 19:53:01,191 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.1.pt
+[2019-10-05 19:53:07,856 INFO] number of examples: 421684
+[2019-10-05 19:54:01,237 INFO] Step 1700/202000; acc:  60.05; ppl:  6.65; xent: 1.90; lr: 0.00168; 26440/29247 tok/s;   1840 sec
+[2019-10-05 19:55:46,250 INFO] Step 1800/202000; acc:  60.81; ppl:  6.32; xent: 1.84; lr: 0.00178; 26675/28791 tok/s;   1945 sec
+[2019-10-05 19:57:31,948 INFO] Step 1900/202000; acc:  61.78; ppl:  5.95; xent: 1.78; lr: 0.00188; 26457/28873 tok/s;   2051 sec
+[2019-10-05 19:59:13,151 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.0.pt
+[2019-10-05 19:59:17,360 INFO] Step 2000/202000; acc:  62.54; ppl:  5.67; xent: 1.74; lr: 0.00198; 26629/29079 tok/s;   2156 sec
+[2019-10-05 19:59:17,361 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 19:59:17,392 INFO] number of examples: 5006
+[2019-10-05 19:59:25,034 INFO] Validation perplexity: 6.27823
+[2019-10-05 19:59:25,034 INFO] Validation accuracy: 64.378
+[2019-10-05 19:59:25,034 INFO] Model is improving acc: 60.1839 --> 64.378.
+[2019-10-05 19:59:25,034 INFO] Model is improving ppl: 8.5369 --> 6.27823.
+[2019-10-05 19:59:25,267 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_2000.pt
+[2019-10-05 19:59:30,818 INFO] number of examples: 892901
+[2019-10-05 20:01:12,694 INFO] Step 2100/202000; acc:  63.26; ppl:  5.43; xent: 1.69; lr: 0.00193; 24415/26585 tok/s;   2271 sec
+[2019-10-05 20:02:58,257 INFO] Step 2200/202000; acc:  63.68; ppl:  5.26; xent: 1.66; lr: 0.00188; 26769/29081 tok/s;   2377 sec
+[2019-10-05 20:04:43,756 INFO] Step 2300/202000; acc:  64.68; ppl:  4.95; xent: 1.60; lr: 0.00184; 26707/29199 tok/s;   2482 sec
+[2019-10-05 20:06:29,519 INFO] Step 2400/202000; acc:  65.08; ppl:  4.83; xent: 1.57; lr: 0.00180; 26834/29118 tok/s;   2588 sec
+[2019-10-05 20:08:15,606 INFO] Step 2500/202000; acc:  65.55; ppl:  4.69; xent: 1.55; lr: 0.00177; 26498/29044 tok/s;   2694 sec
+[2019-10-05 20:08:15,606 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 20:08:15,673 INFO] number of examples: 5006
+[2019-10-05 20:08:23,230 INFO] Validation perplexity: 5.17871
+[2019-10-05 20:08:23,231 INFO] Validation accuracy: 67.2306
+[2019-10-05 20:08:23,231 INFO] Model is improving acc: 64.378 --> 67.2306.
+[2019-10-05 20:08:23,231 INFO] Model is improving ppl: 6.27823 --> 5.17871.
+[2019-10-05 20:08:23,441 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_2500.pt
+[2019-10-05 20:10:09,949 INFO] Step 2600/202000; acc:  66.16; ppl:  4.50; xent: 1.50; lr: 0.00173; 24798/26753 tok/s;   2809 sec
+[2019-10-05 20:11:55,997 INFO] Step 2700/202000; acc:  66.35; ppl:  4.43; xent: 1.49; lr: 0.00170; 26581/28976 tok/s;   2915 sec
+[2019-10-05 20:12:40,267 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.1.pt
+[2019-10-05 20:12:50,123 INFO] number of examples: 421684
+[2019-10-05 20:13:41,655 INFO] Step 2800/202000; acc:  67.08; ppl:  4.25; xent: 1.45; lr: 0.00167; 26379/29175 tok/s;   3020 sec
+[2019-10-05 20:15:26,790 INFO] Step 2900/202000; acc:  67.18; ppl:  4.21; xent: 1.44; lr: 0.00164; 26645/28734 tok/s;   3125 sec
+[2019-10-05 20:17:13,170 INFO] Step 3000/202000; acc:  67.64; ppl:  4.09; xent: 1.41; lr: 0.00161; 26262/28703 tok/s;   3232 sec
+[2019-10-05 20:17:13,170 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 20:17:13,201 INFO] number of examples: 5006
+[2019-10-05 20:17:20,832 INFO] Validation perplexity: 4.66746
+[2019-10-05 20:17:20,832 INFO] Validation accuracy: 68.8306
+[2019-10-05 20:17:20,832 INFO] Model is improving acc: 67.2306 --> 68.8306.
+[2019-10-05 20:17:20,832 INFO] Model is improving ppl: 5.17871 --> 4.66746.
+[2019-10-05 20:17:21,043 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_3000.pt
+[2019-10-05 20:19:01,379 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.0.pt
+[2019-10-05 20:19:07,748 INFO] Step 3100/202000; acc:  67.93; ppl:  4.02; xent: 1.39; lr: 0.00159; 24529/26745 tok/s;   3346 sec
+[2019-10-05 20:19:19,905 INFO] number of examples: 892901
+[2019-10-05 20:20:54,085 INFO] Step 3200/202000; acc:  68.17; ppl:  3.96; xent: 1.38; lr: 0.00156; 26479/28853 tok/s;   3453 sec
+[2019-10-05 20:22:39,813 INFO] Step 3300/202000; acc:  68.15; ppl:  3.94; xent: 1.37; lr: 0.00154; 26713/29003 tok/s;   3558 sec
+[2019-10-05 20:24:25,590 INFO] Step 3400/202000; acc:  68.75; ppl:  3.82; xent: 1.34; lr: 0.00152; 26657/29164 tok/s;   3664 sec
+[2019-10-05 20:26:11,270 INFO] Step 3500/202000; acc:  68.81; ppl:  3.80; xent: 1.34; lr: 0.00149; 26872/29108 tok/s;   3770 sec
+[2019-10-05 20:26:11,271 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 20:26:11,342 INFO] number of examples: 5006
+[2019-10-05 20:26:18,849 INFO] Validation perplexity: 4.36567
+[2019-10-05 20:26:18,849 INFO] Validation accuracy: 69.8485
+[2019-10-05 20:26:18,849 INFO] Model is improving acc: 68.8306 --> 69.8485.
+[2019-10-05 20:26:18,849 INFO] Model is improving ppl: 4.66746 --> 4.36567.
+[2019-10-05 20:26:19,061 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_3500.pt
+[2019-10-05 20:28:06,319 INFO] Step 3600/202000; acc:  69.03; ppl:  3.75; xent: 1.32; lr: 0.00147; 24419/26799 tok/s;   3885 sec
+[2019-10-05 20:29:51,972 INFO] Step 3700/202000; acc:  69.33; ppl:  3.68; xent: 1.30; lr: 0.00145; 26822/28944 tok/s;   3991 sec
+[2019-10-05 20:31:38,119 INFO] Step 3800/202000; acc:  69.28; ppl:  3.67; xent: 1.30; lr: 0.00143; 26572/28945 tok/s;   4097 sec
+[2019-10-05 20:32:20,447 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.1.pt
+[2019-10-05 20:32:30,590 INFO] number of examples: 421684
+[2019-10-05 20:33:23,682 INFO] Step 3900/202000; acc:  69.78; ppl:  3.58; xent: 1.27; lr: 0.00142; 26409/29199 tok/s;   4202 sec
+[2019-10-05 20:35:09,405 INFO] Step 4000/202000; acc:  69.71; ppl:  3.58; xent: 1.28; lr: 0.00140; 26472/28551 tok/s;   4308 sec
+[2019-10-05 20:35:09,406 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 20:35:09,437 INFO] number of examples: 5006
+[2019-10-05 20:35:17,119 INFO] Validation perplexity: 4.14349
+[2019-10-05 20:35:17,120 INFO] Validation accuracy: 70.5154
+[2019-10-05 20:35:17,120 INFO] Model is improving acc: 69.8485 --> 70.5154.
+[2019-10-05 20:35:17,120 INFO] Model is improving ppl: 4.36567 --> 4.14349.
+[2019-10-05 20:35:17,331 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_4000.pt
+[2019-10-05 20:37:04,347 INFO] Step 4100/202000; acc:  70.10; ppl:  3.51; xent: 1.25; lr: 0.00138; 24309/26600 tok/s;   4423 sec
+[2019-10-05 20:38:41,816 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.0.pt
+[2019-10-05 20:38:50,274 INFO] Step 4200/202000; acc:  70.19; ppl:  3.48; xent: 1.25; lr: 0.00136; 26556/28916 tok/s;   4529 sec
+[2019-10-05 20:39:01,547 INFO] number of examples: 892901
+[2019-10-05 20:40:36,206 INFO] Step 4300/202000; acc:  70.34; ppl:  3.46; xent: 1.24; lr: 0.00135; 26575/28959 tok/s;   4635 sec
+[2019-10-05 20:42:22,120 INFO] Step 4400/202000; acc:  70.22; ppl:  3.46; xent: 1.24; lr: 0.00133; 26649/28977 tok/s;   4741 sec
+[2019-10-05 20:44:07,770 INFO] Step 4500/202000; acc:  70.66; ppl:  3.39; xent: 1.22; lr: 0.00132; 26704/29169 tok/s;   4846 sec
+[2019-10-05 20:44:07,770 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 20:44:07,843 INFO] number of examples: 5006
+[2019-10-05 20:44:15,431 INFO] Validation perplexity: 4.00006
+[2019-10-05 20:44:15,431 INFO] Validation accuracy: 71.0179
+[2019-10-05 20:44:15,431 INFO] Model is improving acc: 70.5154 --> 71.0179.
+[2019-10-05 20:44:15,431 INFO] Model is improving ppl: 4.14349 --> 4.00006.
+[2019-10-05 20:44:15,642 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_4500.pt
+[2019-10-05 20:46:02,228 INFO] Step 4600/202000; acc:  70.71; ppl:  3.37; xent: 1.22; lr: 0.00130; 24807/26893 tok/s;   4961 sec
+[2019-10-05 20:47:48,460 INFO] Step 4700/202000; acc:  70.83; ppl:  3.35; xent: 1.21; lr: 0.00129; 26433/28999 tok/s;   5067 sec
+[2019-10-05 20:49:33,881 INFO] Step 4800/202000; acc:  71.01; ppl:  3.31; xent: 1.20; lr: 0.00128; 26864/29029 tok/s;   5172 sec
+[2019-10-05 20:51:20,088 INFO] Step 4900/202000; acc:  70.93; ppl:  3.31; xent: 1.20; lr: 0.00126; 26569/28916 tok/s;   5279 sec
+[2019-10-05 20:52:00,587 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.1.pt
+[2019-10-05 20:52:07,341 INFO] number of examples: 421684
+[2019-10-05 20:53:06,108 INFO] Step 5000/202000; acc:  71.35; ppl:  3.24; xent: 1.18; lr: 0.00125; 26303/29061 tok/s;   5385 sec
+[2019-10-05 20:53:06,109 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 20:53:06,140 INFO] number of examples: 5006
+[2019-10-05 20:53:13,835 INFO] Validation perplexity: 3.92184
+[2019-10-05 20:53:13,835 INFO] Validation accuracy: 71.4165
+[2019-10-05 20:53:13,835 INFO] Model is improving acc: 71.0179 --> 71.4165.
+[2019-10-05 20:53:13,835 INFO] Model is improving ppl: 4.00006 --> 3.92184.
+[2019-10-05 20:53:14,047 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_5000.pt
+[2019-10-05 20:55:01,245 INFO] Step 5100/202000; acc:  71.23; ppl:  3.26; xent: 1.18; lr: 0.00124; 24315/26244 tok/s;   5500 sec
+[2019-10-05 20:56:47,608 INFO] Step 5200/202000; acc:  71.54; ppl:  3.21; xent: 1.17; lr: 0.00123; 26276/28732 tok/s;   5606 sec
+[2019-10-05 20:58:24,241 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.0.pt
+[2019-10-05 20:58:33,700 INFO] Step 5300/202000; acc:  71.60; ppl:  3.19; xent: 1.16; lr: 0.00121; 26518/28881 tok/s;   5712 sec
+[2019-10-05 20:58:42,944 INFO] number of examples: 892901
+[2019-10-05 21:00:19,951 INFO] Step 5400/202000; acc:  71.66; ppl:  3.18; xent: 1.16; lr: 0.00120; 26502/28876 tok/s;   5819 sec
+[2019-10-05 21:02:06,413 INFO] Step 5500/202000; acc:  71.57; ppl:  3.18; xent: 1.16; lr: 0.00119; 26492/28825 tok/s;   5925 sec
+[2019-10-05 21:02:06,414 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 21:02:06,449 INFO] number of examples: 5006
+[2019-10-05 21:02:14,048 INFO] Validation perplexity: 3.79847
+[2019-10-05 21:02:14,048 INFO] Validation accuracy: 71.8069
+[2019-10-05 21:02:14,048 INFO] Model is improving acc: 71.4165 --> 71.8069.
+[2019-10-05 21:02:14,048 INFO] Model is improving ppl: 3.92184 --> 3.79847.
+[2019-10-05 21:02:14,258 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_5500.pt
+[2019-10-05 21:04:01,378 INFO] Step 5600/202000; acc:  71.88; ppl:  3.14; xent: 1.14; lr: 0.00118; 24541/26801 tok/s;   6040 sec
+[2019-10-05 21:05:47,366 INFO] Step 5700/202000; acc:  71.94; ppl:  3.12; xent: 1.14; lr: 0.00117; 26770/29013 tok/s;   6146 sec
+[2019-10-05 21:07:33,777 INFO] Step 5800/202000; acc:  72.04; ppl:  3.11; xent: 1.13; lr: 0.00116; 26408/28984 tok/s;   6252 sec
+[2019-10-05 21:09:19,181 INFO] Step 5900/202000; acc:  72.17; ppl:  3.08; xent: 1.13; lr: 0.00115; 26873/29032 tok/s;   6358 sec
+[2019-10-05 21:11:05,175 INFO] Step 6000/202000; acc:  72.05; ppl:  3.09; xent: 1.13; lr: 0.00114; 26615/28978 tok/s;   6464 sec
+[2019-10-05 21:11:05,176 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 21:11:05,243 INFO] number of examples: 5006
+[2019-10-05 21:11:12,831 INFO] Validation perplexity: 3.74917
+[2019-10-05 21:11:12,831 INFO] Validation accuracy: 71.9876
+[2019-10-05 21:11:12,831 INFO] Model is improving acc: 71.8069 --> 71.9876.
+[2019-10-05 21:11:12,831 INFO] Model is improving ppl: 3.79847 --> 3.74917.
+[2019-10-05 21:11:13,043 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_6000.pt
+[2019-10-05 21:11:52,804 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.1.pt
+[2019-10-05 21:12:02,915 INFO] number of examples: 421684
+[2019-10-05 21:13:00,306 INFO] Step 6100/202000; acc:  72.43; ppl:  3.04; xent: 1.11; lr: 0.00113; 24182/26702 tok/s;   6579 sec
+[2019-10-05 21:14:46,445 INFO] Step 6200/202000; acc:  72.31; ppl:  3.05; xent: 1.11; lr: 0.00112; 26415/28526 tok/s;   6685 sec
+[2019-10-05 21:16:32,371 INFO] Step 6300/202000; acc:  72.56; ppl:  3.01; xent: 1.10; lr: 0.00111; 26388/28851 tok/s;   6791 sec
+[2019-10-05 21:18:06,413 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.0.pt
+[2019-10-05 21:18:17,971 INFO] Step 6400/202000; acc:  72.66; ppl:  2.99; xent: 1.10; lr: 0.00110; 26635/29017 tok/s;   6897 sec
+[2019-10-05 21:18:26,359 INFO] number of examples: 892901
+[2019-10-05 21:20:04,365 INFO] Step 6500/202000; acc:  72.60; ppl:  3.00; xent: 1.10; lr: 0.00110; 26482/28831 tok/s;   7003 sec
+[2019-10-05 21:20:04,365 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 21:20:04,398 INFO] number of examples: 5006
+[2019-10-05 21:20:12,020 INFO] Validation perplexity: 3.69608
+[2019-10-05 21:20:12,020 INFO] Validation accuracy: 72.2722
+[2019-10-05 21:20:12,020 INFO] Model is improving acc: 71.9876 --> 72.2722.
+[2019-10-05 21:20:12,020 INFO] Model is improving ppl: 3.74917 --> 3.69608.
+[2019-10-05 21:20:12,236 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_6500.pt
+[2019-10-05 21:21:59,106 INFO] Step 6600/202000; acc:  72.52; ppl:  3.01; xent: 1.10; lr: 0.00109; 24558/26739 tok/s;   7118 sec
+[2019-10-05 21:23:45,543 INFO] Step 6700/202000; acc:  72.79; ppl:  2.97; xent: 1.09; lr: 0.00108; 26515/28961 tok/s;   7224 sec
+[2019-10-05 21:25:31,606 INFO] Step 6800/202000; acc:  72.87; ppl:  2.96; xent: 1.08; lr: 0.00107; 26771/29008 tok/s;   7330 sec
+[2019-10-05 21:27:18,394 INFO] Step 6900/202000; acc:  72.88; ppl:  2.95; xent: 1.08; lr: 0.00106; 26291/28818 tok/s;   7437 sec
+[2019-10-05 21:29:03,929 INFO] Step 7000/202000; acc:  73.03; ppl:  2.93; xent: 1.07; lr: 0.00106; 26826/29017 tok/s;   7543 sec
+[2019-10-05 21:29:03,929 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 21:29:04,002 INFO] number of examples: 5006
+[2019-10-05 21:29:11,528 INFO] Validation perplexity: 3.63069
+[2019-10-05 21:29:11,528 INFO] Validation accuracy: 72.5449
+[2019-10-05 21:29:11,528 INFO] Model is improving acc: 72.2722 --> 72.5449.
+[2019-10-05 21:29:11,528 INFO] Model is improving ppl: 3.69608 --> 3.63069.
+[2019-10-05 21:29:11,738 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_7000.pt
+[2019-10-05 21:30:59,409 INFO] Step 7100/202000; acc:  72.94; ppl:  2.93; xent: 1.08; lr: 0.00105; 24438/26626 tok/s;   7658 sec
+[2019-10-05 21:31:36,467 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.1.pt
+[2019-10-05 21:31:43,394 INFO] number of examples: 421684
+[2019-10-05 21:32:45,165 INFO] Step 7200/202000; acc:  73.22; ppl:  2.90; xent: 1.06; lr: 0.00104; 26355/29056 tok/s;   7764 sec
+[2019-10-05 21:34:31,048 INFO] Step 7300/202000; acc:  73.13; ppl:  2.91; xent: 1.07; lr: 0.00103; 26478/28608 tok/s;   7870 sec
+[2019-10-05 21:36:17,310 INFO] Step 7400/202000; acc:  73.34; ppl:  2.88; xent: 1.06; lr: 0.00103; 26289/28738 tok/s;   7976 sec
+[2019-10-05 21:37:49,227 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.0.pt
+[2019-10-05 21:38:03,037 INFO] Step 7500/202000; acc:  73.42; ppl:  2.86; xent: 1.05; lr: 0.00102; 26603/29010 tok/s;   8082 sec
+[2019-10-05 21:38:03,037 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 21:38:03,070 INFO] number of examples: 5006
+[2019-10-05 21:38:08,804 INFO] number of examples: 892901
+[2019-10-05 21:38:10,741 INFO] Validation perplexity: 3.58767
+[2019-10-05 21:38:10,741 INFO] Validation accuracy: 72.6115
+[2019-10-05 21:38:10,741 INFO] Model is improving acc: 72.5449 --> 72.6115.
+[2019-10-05 21:38:10,741 INFO] Model is improving ppl: 3.63069 --> 3.58767.
+[2019-10-05 21:38:10,958 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_7500.pt
+[2019-10-05 21:39:58,651 INFO] Step 7600/202000; acc:  73.34; ppl:  2.87; xent: 1.06; lr: 0.00101; 24356/26528 tok/s;   8197 sec
+[2019-10-05 21:41:44,618 INFO] Step 7700/202000; acc:  73.28; ppl:  2.88; xent: 1.06; lr: 0.00101; 26567/28937 tok/s;   8303 sec
+[2019-10-05 21:43:30,694 INFO] Step 7800/202000; acc:  73.49; ppl:  2.85; xent: 1.05; lr: 0.00100; 26640/29051 tok/s;   8409 sec
+[2019-10-05 21:45:16,600 INFO] Step 7900/202000; acc:  73.61; ppl:  2.83; xent: 1.04; lr: 0.00099; 26816/29087 tok/s;   8515 sec
+[2019-10-05 21:47:02,861 INFO] Step 8000/202000; acc:  73.59; ppl:  2.83; xent: 1.04; lr: 0.00099; 26410/28956 tok/s;   8621 sec
+[2019-10-05 21:47:02,861 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 21:47:02,935 INFO] number of examples: 5006
+[2019-10-05 21:47:10,440 INFO] Validation perplexity: 3.55404
+[2019-10-05 21:47:10,440 INFO] Validation accuracy: 72.7856
+[2019-10-05 21:47:10,440 INFO] Model is improving acc: 72.6115 --> 72.7856.
+[2019-10-05 21:47:10,440 INFO] Model is improving ppl: 3.58767 --> 3.55404.
+[2019-10-05 21:47:10,651 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_8000.pt
+[2019-10-05 21:48:57,703 INFO] Step 8100/202000; acc:  73.75; ppl:  2.81; xent: 1.03; lr: 0.00098; 24682/26667 tok/s;   8736 sec
+[2019-10-05 21:50:43,434 INFO] Step 8200/202000; acc:  73.59; ppl:  2.82; xent: 1.04; lr: 0.00098; 26645/29068 tok/s;   8842 sec
+[2019-10-05 21:51:18,621 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.1.pt
+[2019-10-05 21:51:25,400 INFO] number of examples: 421684
+[2019-10-05 21:52:29,213 INFO] Step 8300/202000; acc:  73.89; ppl:  2.79; xent: 1.02; lr: 0.00097; 26367/29060 tok/s;   8948 sec
+[2019-10-05 21:54:14,980 INFO] Step 8400/202000; acc:  73.80; ppl:  2.80; xent: 1.03; lr: 0.00096; 26524/28625 tok/s;   9054 sec
+[2019-10-05 21:56:00,765 INFO] Step 8500/202000; acc:  73.99; ppl:  2.77; xent: 1.02; lr: 0.00096; 26416/28887 tok/s;   9159 sec
+[2019-10-05 21:56:00,766 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 21:56:00,799 INFO] number of examples: 5006
+[2019-10-05 21:56:08,480 INFO] Validation perplexity: 3.54326
+[2019-10-05 21:56:08,480 INFO] Validation accuracy: 72.8716
+[2019-10-05 21:56:08,480 INFO] Model is improving acc: 72.7856 --> 72.8716.
+[2019-10-05 21:56:08,480 INFO] Model is improving ppl: 3.55404 --> 3.54326.
+[2019-10-05 21:56:08,702 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_8500.pt
+[2019-10-05 21:57:40,774 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.0.pt
+[2019-10-05 21:57:56,537 INFO] Step 8600/202000; acc:  74.06; ppl:  2.76; xent: 1.02; lr: 0.00095; 24279/26480 tok/s;   9275 sec
+[2019-10-05 21:57:59,617 INFO] number of examples: 892901
+[2019-10-05 21:59:42,713 INFO] Step 8700/202000; acc:  73.97; ppl:  2.77; xent: 1.02; lr: 0.00095; 26527/28875 tok/s;   9381 sec
+[2019-10-05 22:01:28,435 INFO] Step 8800/202000; acc:  73.89; ppl:  2.78; xent: 1.02; lr: 0.00094; 26625/29018 tok/s;   9487 sec
+[2019-10-05 22:03:14,443 INFO] Step 8900/202000; acc:  74.10; ppl:  2.75; xent: 1.01; lr: 0.00094; 26660/29066 tok/s;   9593 sec
+[2019-10-05 22:05:00,394 INFO] Step 9000/202000; acc:  74.21; ppl:  2.74; xent: 1.01; lr: 0.00093; 26808/29070 tok/s;   9699 sec
+[2019-10-05 22:05:00,395 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 22:05:00,428 INFO] number of examples: 5006
+[2019-10-05 22:05:08,117 INFO] Validation perplexity: 3.50675
+[2019-10-05 22:05:08,117 INFO] Validation accuracy: 73.0679
+[2019-10-05 22:05:08,117 INFO] Model is improving acc: 72.8716 --> 73.0679.
+[2019-10-05 22:05:08,117 INFO] Model is improving ppl: 3.54326 --> 3.50675.
+[2019-10-05 22:05:08,329 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_9000.pt
+[2019-10-05 22:06:56,041 INFO] Step 9100/202000; acc:  74.19; ppl:  2.74; xent: 1.01; lr: 0.00093; 24240/26611 tok/s;   9815 sec
+[2019-10-05 22:08:41,225 INFO] Step 9200/202000; acc:  74.29; ppl:  2.72; xent: 1.00; lr: 0.00092; 26970/29110 tok/s;   9920 sec
+[2019-10-05 22:10:27,781 INFO] Step 9300/202000; acc:  74.14; ppl:  2.74; xent: 1.01; lr: 0.00092; 26417/28839 tok/s;  10026 sec
+[2019-10-05 22:11:00,799 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.1.pt
+[2019-10-05 22:11:10,980 INFO] number of examples: 421684
+[2019-10-05 22:12:13,904 INFO] Step 9400/202000; acc:  74.49; ppl:  2.70; xent: 0.99; lr: 0.00091; 26281/28971 tok/s;  10133 sec
+[2019-10-05 22:13:59,968 INFO] Step 9500/202000; acc:  74.31; ppl:  2.71; xent: 1.00; lr: 0.00091; 26478/28553 tok/s;  10239 sec
+[2019-10-05 22:13:59,969 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 22:14:00,044 INFO] number of examples: 5006
+[2019-10-05 22:14:07,670 INFO] Validation perplexity: 3.50178
+[2019-10-05 22:14:07,671 INFO] Validation accuracy: 73.1405
+[2019-10-05 22:14:07,671 INFO] Model is improving acc: 73.0679 --> 73.1405.
+[2019-10-05 22:14:07,671 INFO] Model is improving ppl: 3.50675 --> 3.50178.
+[2019-10-05 22:14:07,881 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_9500.pt
+[2019-10-05 22:15:55,574 INFO] Step 9600/202000; acc:  74.54; ppl:  2.69; xent: 0.99; lr: 0.00090; 24163/26427 tok/s;  10354 sec
+[2019-10-05 22:17:24,578 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.0.pt
+[2019-10-05 22:17:41,569 INFO] Step 9700/202000; acc:  74.58; ppl:  2.68; xent: 0.99; lr: 0.00090; 26534/28931 tok/s;  10460 sec
+[2019-10-05 22:17:44,723 INFO] number of examples: 892901
+[2019-10-05 22:19:27,972 INFO] Step 9800/202000; acc:  74.50; ppl:  2.69; xent: 0.99; lr: 0.00089; 26471/28796 tok/s;  10567 sec
+[2019-10-05 22:21:14,150 INFO] Step 9900/202000; acc:  74.41; ppl:  2.70; xent: 0.99; lr: 0.00089; 26487/28920 tok/s;  10673 sec
+[2019-10-05 22:23:00,373 INFO] Step 10000/202000; acc:  74.59; ppl:  2.68; xent: 0.98; lr: 0.00088; 26601/28987 tok/s;  10779 sec
+[2019-10-05 22:23:00,373 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 22:23:00,405 INFO] number of examples: 5006
+[2019-10-05 22:23:07,961 INFO] Validation perplexity: 3.48537
+[2019-10-05 22:23:07,961 INFO] Validation accuracy: 73.2319
+[2019-10-05 22:23:07,961 INFO] Model is improving acc: 73.1405 --> 73.2319.
+[2019-10-05 22:23:07,961 INFO] Model is improving ppl: 3.50178 --> 3.48537.
+[2019-10-05 22:23:08,173 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_10000.pt
+[2019-10-05 22:24:55,992 INFO] Step 10100/202000; acc:  74.72; ppl:  2.66; xent: 0.98; lr: 0.00088; 24596/26647 tok/s;  10895 sec
+[2019-10-05 22:26:41,829 INFO] Step 10200/202000; acc:  74.70; ppl:  2.66; xent: 0.98; lr: 0.00088; 26474/29085 tok/s;  11000 sec
+[2019-10-05 22:28:27,548 INFO] Step 10300/202000; acc:  74.73; ppl:  2.66; xent: 0.98; lr: 0.00087; 26813/28949 tok/s;  11106 sec
+[2019-10-05 22:30:13,399 INFO] Step 10400/202000; acc:  74.65; ppl:  2.66; xent: 0.98; lr: 0.00087; 26624/29048 tok/s;  11212 sec
+[2019-10-05 22:30:44,159 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.1.pt
+[2019-10-05 22:30:51,157 INFO] number of examples: 421684
+[2019-10-05 22:31:58,820 INFO] Step 10500/202000; acc:  74.94; ppl:  2.63; xent: 0.97; lr: 0.00086; 26421/29120 tok/s;  11317 sec
+[2019-10-05 22:31:58,821 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 22:31:58,894 INFO] number of examples: 5006
+[2019-10-05 22:32:06,495 INFO] Validation perplexity: 3.47995
+[2019-10-05 22:32:06,495 INFO] Validation accuracy: 73.3608
+[2019-10-05 22:32:06,495 INFO] Model is improving acc: 73.2319 --> 73.3608.
+[2019-10-05 22:32:06,495 INFO] Model is improving ppl: 3.48537 --> 3.47995.
+[2019-10-05 22:32:06,705 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_10500.pt
+[2019-10-05 22:33:53,826 INFO] Step 10600/202000; acc:  74.76; ppl:  2.65; xent: 0.97; lr: 0.00086; 24399/26341 tok/s;  11432 sec
+[2019-10-05 22:35:39,874 INFO] Step 10700/202000; acc:  75.02; ppl:  2.62; xent: 0.96; lr: 0.00085; 26369/28818 tok/s;  11538 sec
+[2019-10-05 22:37:06,357 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.0.pt
+[2019-10-05 22:37:25,299 INFO] Step 10800/202000; acc:  75.07; ppl:  2.61; xent: 0.96; lr: 0.00085; 26700/29095 tok/s;  11644 sec
+[2019-10-05 22:37:26,004 INFO] number of examples: 892901
+[2019-10-05 22:39:11,762 INFO] Step 10900/202000; acc:  74.95; ppl:  2.62; xent: 0.96; lr: 0.00085; 26450/28780 tok/s;  11750 sec
+[2019-10-05 22:40:57,761 INFO] Step 11000/202000; acc:  74.86; ppl:  2.63; xent: 0.97; lr: 0.00084; 26534/28964 tok/s;  11856 sec
+[2019-10-05 22:40:57,762 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 22:40:57,795 INFO] number of examples: 5006
+[2019-10-05 22:41:05,397 INFO] Validation perplexity: 3.45502
+[2019-10-05 22:41:05,397 INFO] Validation accuracy: 73.3699
+[2019-10-05 22:41:05,397 INFO] Model is improving acc: 73.3608 --> 73.3699.
+[2019-10-05 22:41:05,397 INFO] Model is improving ppl: 3.47995 --> 3.45502.
+[2019-10-05 22:41:05,607 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_11000.pt
+[2019-10-05 22:42:52,986 INFO] Step 11100/202000; acc:  75.04; ppl:  2.61; xent: 0.96; lr: 0.00084; 24533/26730 tok/s;  11972 sec
+[2019-10-05 22:44:39,349 INFO] Step 11200/202000; acc:  75.15; ppl:  2.60; xent: 0.96; lr: 0.00084; 26710/28982 tok/s;  12078 sec
+[2019-10-05 22:46:25,392 INFO] Step 11300/202000; acc:  75.11; ppl:  2.60; xent: 0.96; lr: 0.00083; 26429/29033 tok/s;  12184 sec
+[2019-10-05 22:48:10,544 INFO] Step 11400/202000; acc:  75.14; ppl:  2.60; xent: 0.95; lr: 0.00083; 26972/29069 tok/s;  12289 sec
+[2019-10-05 22:49:57,155 INFO] Step 11500/202000; acc:  75.07; ppl:  2.60; xent: 0.96; lr: 0.00082; 26411/28871 tok/s;  12396 sec
+[2019-10-05 22:49:57,155 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 22:49:57,236 INFO] number of examples: 5006
+[2019-10-05 22:50:04,811 INFO] Validation perplexity: 3.47881
+[2019-10-05 22:50:04,812 INFO] Validation accuracy: 73.3936
+[2019-10-05 22:50:04,812 INFO] Stalled patience: 4/5
+[2019-10-05 22:50:05,022 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_11500.pt
+[2019-10-05 22:50:36,236 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.1.pt
+[2019-10-05 22:50:42,952 INFO] number of examples: 421684
+[2019-10-05 22:51:52,526 INFO] Step 11600/202000; acc:  75.36; ppl:  2.57; xent: 0.94; lr: 0.00082; 24142/26579 tok/s;  12511 sec
+[2019-10-05 22:53:38,247 INFO] Step 11700/202000; acc:  75.20; ppl:  2.59; xent: 0.95; lr: 0.00082; 26547/28675 tok/s;  12617 sec
+[2019-10-05 22:55:24,340 INFO] Step 11800/202000; acc:  75.44; ppl:  2.56; xent: 0.94; lr: 0.00081; 26382/28805 tok/s;  12723 sec
+[2019-10-05 22:56:49,189 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.0.pt
+[2019-10-05 22:57:07,310 INFO] number of examples: 892901
+[2019-10-05 22:57:10,154 INFO] Step 11900/202000; acc:  75.41; ppl:  2.56; xent: 0.94; lr: 0.00081; 26578/28978 tok/s;  12829 sec
+[2019-10-05 22:58:57,093 INFO] Step 12000/202000; acc:  75.37; ppl:  2.57; xent: 0.94; lr: 0.00081; 26353/28670 tok/s;  12936 sec
+[2019-10-05 22:58:57,094 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 22:58:57,129 INFO] number of examples: 5006
+[2019-10-05 22:59:04,735 INFO] Validation perplexity: 3.46649
+[2019-10-05 22:59:04,735 INFO] Validation accuracy: 73.4354
+[2019-10-05 22:59:04,735 INFO] Stalled patience: 3/5
+[2019-10-05 22:59:04,947 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_12000.pt
+[2019-10-05 23:00:52,803 INFO] Step 12100/202000; acc:  75.27; ppl:  2.58; xent: 0.95; lr: 0.00080; 24290/26531 tok/s;  13051 sec
+[2019-10-05 23:02:38,670 INFO] Step 12200/202000; acc:  75.46; ppl:  2.55; xent: 0.94; lr: 0.00080; 26716/29090 tok/s;  13157 sec
+[2019-10-05 23:04:24,913 INFO] Step 12300/202000; acc:  75.50; ppl:  2.55; xent: 0.94; lr: 0.00080; 26712/28996 tok/s;  13264 sec
+[2019-10-05 23:06:11,434 INFO] Step 12400/202000; acc:  75.51; ppl:  2.55; xent: 0.93; lr: 0.00079; 26325/28915 tok/s;  13370 sec
+[2019-10-05 23:07:56,801 INFO] Step 12500/202000; acc:  75.51; ppl:  2.54; xent: 0.93; lr: 0.00079; 26909/29013 tok/s;  13475 sec
+[2019-10-05 23:07:56,802 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 23:07:56,834 INFO] number of examples: 5006
+[2019-10-05 23:08:04,454 INFO] Validation perplexity: 3.43034
+[2019-10-05 23:08:04,454 INFO] Validation accuracy: 73.486
+[2019-10-05 23:08:04,455 INFO] Model is improving acc: 73.3699 --> 73.486.
+[2019-10-05 23:08:04,455 INFO] Model is improving ppl: 3.45502 --> 3.43034.
+[2019-10-05 23:08:04,666 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_12500.pt
+[2019-10-05 23:09:52,554 INFO] Step 12600/202000; acc:  75.50; ppl:  2.54; xent: 0.93; lr: 0.00079; 24331/26584 tok/s;  13591 sec
+[2019-10-05 23:10:20,159 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.1.pt
+[2019-10-05 23:10:29,800 INFO] number of examples: 421684
+[2019-10-05 23:11:38,586 INFO] Step 12700/202000; acc:  75.70; ppl:  2.52; xent: 0.92; lr: 0.00078; 26275/28923 tok/s;  13697 sec
+[2019-10-05 23:13:25,065 INFO] Step 12800/202000; acc:  75.57; ppl:  2.53; xent: 0.93; lr: 0.00078; 26346/28473 tok/s;  13804 sec
+[2019-10-05 23:15:11,290 INFO] Step 12900/202000; acc:  75.82; ppl:  2.51; xent: 0.92; lr: 0.00078; 26372/28769 tok/s;  13910 sec
+[2019-10-05 23:16:34,634 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.0.pt
+[2019-10-05 23:16:55,722 INFO] number of examples: 892901
+[2019-10-05 23:16:57,781 INFO] Step 13000/202000; acc:  75.80; ppl:  2.51; xent: 0.92; lr: 0.00078; 26374/28789 tok/s;  14016 sec
+[2019-10-05 23:16:57,782 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 23:16:57,851 INFO] number of examples: 5006
+[2019-10-05 23:17:05,526 INFO] Validation perplexity: 3.43534
+[2019-10-05 23:17:05,526 INFO] Validation accuracy: 73.5848
+[2019-10-05 23:17:05,526 INFO] Stalled patience: 4/5
+[2019-10-05 23:17:05,736 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_13000.pt
+[2019-10-05 23:18:53,865 INFO] Step 13100/202000; acc:  75.75; ppl:  2.52; xent: 0.92; lr: 0.00077; 24286/26415 tok/s;  14132 sec
+[2019-10-05 23:20:39,947 INFO] Step 13200/202000; acc:  75.62; ppl:  2.53; xent: 0.93; lr: 0.00077; 26495/28955 tok/s;  14239 sec
+[2019-10-05 23:22:25,681 INFO] Step 13300/202000; acc:  75.80; ppl:  2.51; xent: 0.92; lr: 0.00077; 26775/29103 tok/s;  14344 sec
+[2019-10-05 23:24:11,837 INFO] Step 13400/202000; acc:  75.84; ppl:  2.50; xent: 0.92; lr: 0.00076; 26731/29029 tok/s;  14450 sec
+[2019-10-05 23:25:58,539 INFO] Step 13500/202000; acc:  75.88; ppl:  2.50; xent: 0.92; lr: 0.00076; 26290/28858 tok/s;  14557 sec
+[2019-10-05 23:25:58,540 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 23:25:58,572 INFO] number of examples: 5006
+[2019-10-05 23:26:06,089 INFO] Validation perplexity: 3.43438
+[2019-10-05 23:26:06,089 INFO] Validation accuracy: 73.6312
+[2019-10-05 23:26:06,089 INFO] Stalled patience: 3/5
+[2019-10-05 23:26:06,301 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_13500.pt
+[2019-10-05 23:27:53,347 INFO] Step 13600/202000; acc:  75.84; ppl:  2.50; xent: 0.92; lr: 0.00076; 24672/26645 tok/s;  14672 sec
+[2019-10-05 23:29:39,981 INFO] Step 13700/202000; acc:  75.86; ppl:  2.50; xent: 0.91; lr: 0.00076; 26393/28853 tok/s;  14779 sec
+[2019-10-05 23:30:05,619 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.1.pt
+[2019-10-05 23:30:12,269 INFO] number of examples: 421684
+[2019-10-05 23:31:26,105 INFO] Step 13800/202000; acc:  76.03; ppl:  2.48; xent: 0.91; lr: 0.00075; 26248/28882 tok/s;  14885 sec
+[2019-10-05 23:33:12,972 INFO] Step 13900/202000; acc:  75.89; ppl:  2.49; xent: 0.91; lr: 0.00075; 26292/28362 tok/s;  14992 sec
+[2019-10-05 23:34:59,150 INFO] Step 14000/202000; acc:  76.14; ppl:  2.47; xent: 0.90; lr: 0.00075; 26371/28791 tok/s;  15098 sec
+[2019-10-05 23:34:59,151 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 23:34:59,227 INFO] number of examples: 5006
+[2019-10-05 23:35:06,818 INFO] Validation perplexity: 3.42784
+[2019-10-05 23:35:06,818 INFO] Validation accuracy: 73.6384
+[2019-10-05 23:35:06,818 INFO] Model is improving acc: 73.486 --> 73.6384.
+[2019-10-05 23:35:06,818 INFO] Model is improving ppl: 3.43034 --> 3.42784.
+[2019-10-05 23:35:07,030 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_14000.pt
+[2019-10-05 23:36:29,950 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.0.pt
+[2019-10-05 23:36:50,925 INFO] number of examples: 892901
+[2019-10-05 23:36:54,192 INFO] Step 14100/202000; acc:  76.14; ppl:  2.47; xent: 0.90; lr: 0.00074; 24410/26648 tok/s;  15213 sec
+[2019-10-05 23:38:40,982 INFO] Step 14200/202000; acc:  76.07; ppl:  2.47; xent: 0.91; lr: 0.00074; 26417/28727 tok/s;  15320 sec
+[2019-10-05 23:40:27,457 INFO] Step 14300/202000; acc:  75.98; ppl:  2.48; xent: 0.91; lr: 0.00074; 26402/28852 tok/s;  15426 sec
+[2019-10-05 23:42:13,789 INFO] Step 14400/202000; acc:  76.11; ppl:  2.47; xent: 0.90; lr: 0.00074; 26601/28929 tok/s;  15532 sec
+[2019-10-05 23:44:00,336 INFO] Step 14500/202000; acc:  76.17; ppl:  2.46; xent: 0.90; lr: 0.00073; 26611/28913 tok/s;  15639 sec
+[2019-10-05 23:44:00,336 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 23:44:00,369 INFO] number of examples: 5006
+[2019-10-05 23:44:08,036 INFO] Validation perplexity: 3.41349
+[2019-10-05 23:44:08,036 INFO] Validation accuracy: 73.6701
+[2019-10-05 23:44:08,036 INFO] Model is improving acc: 73.6384 --> 73.6701.
+[2019-10-05 23:44:08,036 INFO] Model is improving ppl: 3.42784 --> 3.41349.
+[2019-10-05 23:44:08,248 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_14500.pt
+[2019-10-05 23:45:55,614 INFO] Step 14600/202000; acc:  76.22; ppl:  2.46; xent: 0.90; lr: 0.00073; 24366/26742 tok/s;  15754 sec
+[2019-10-05 23:47:41,507 INFO] Step 14700/202000; acc:  76.15; ppl:  2.46; xent: 0.90; lr: 0.00073; 26752/28873 tok/s;  15860 sec
+[2019-10-05 23:49:27,716 INFO] Step 14800/202000; acc:  76.24; ppl:  2.45; xent: 0.90; lr: 0.00073; 26499/28963 tok/s;  15966 sec
+[2019-10-05 23:49:51,217 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.1.pt
+[2019-10-05 23:50:01,911 INFO] number of examples: 421684
+[2019-10-05 23:51:13,580 INFO] Step 14900/202000; acc:  76.34; ppl:  2.44; xent: 0.89; lr: 0.00072; 26312/28956 tok/s;  16072 sec
+[2019-10-05 23:52:59,861 INFO] Step 15000/202000; acc:  76.20; ppl:  2.46; xent: 0.90; lr: 0.00072; 26420/28510 tok/s;  16178 sec
+[2019-10-05 23:52:59,862 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-05 23:52:59,946 INFO] number of examples: 5006
+[2019-10-05 23:53:07,505 INFO] Validation perplexity: 3.43247
+[2019-10-05 23:53:07,505 INFO] Validation accuracy: 73.6955
+[2019-10-05 23:53:07,505 INFO] Stalled patience: 4/5
+[2019-10-05 23:53:07,716 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_15000.pt
+[2019-10-05 23:54:55,238 INFO] Step 15100/202000; acc:  76.47; ppl:  2.43; xent: 0.89; lr: 0.00072; 24258/26478 tok/s;  16294 sec
+[2019-10-05 23:56:15,113 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.0.pt
+[2019-10-05 23:56:33,108 INFO] number of examples: 892901
+[2019-10-05 23:56:41,584 INFO] Step 15200/202000; acc:  76.42; ppl:  2.43; xent: 0.89; lr: 0.00072; 26419/28835 tok/s;  16400 sec
+[2019-10-05 23:58:28,292 INFO] Step 15300/202000; acc:  76.37; ppl:  2.44; xent: 0.89; lr: 0.00071; 26428/28773 tok/s;  16507 sec
+[2019-10-06 00:00:14,528 INFO] Step 15400/202000; acc:  76.29; ppl:  2.44; xent: 0.89; lr: 0.00071; 26480/28920 tok/s;  16613 sec
+[2019-10-06 00:02:01,081 INFO] Step 15500/202000; acc:  76.42; ppl:  2.43; xent: 0.89; lr: 0.00071; 26556/28849 tok/s;  16720 sec
+[2019-10-06 00:02:01,082 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-06 00:02:01,113 INFO] number of examples: 5006
+[2019-10-06 00:02:08,753 INFO] Validation perplexity: 3.42064
+[2019-10-06 00:02:08,753 INFO] Validation accuracy: 73.7316
+[2019-10-06 00:02:08,753 INFO] Stalled patience: 3/5
+[2019-10-06 00:02:08,964 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_15500.pt
+[2019-10-06 00:03:56,858 INFO] Step 15600/202000; acc:  76.46; ppl:  2.43; xent: 0.89; lr: 0.00071; 24462/26618 tok/s;  16835 sec
+[2019-10-06 00:05:43,349 INFO] Step 15700/202000; acc:  76.50; ppl:  2.42; xent: 0.88; lr: 0.00071; 26393/28941 tok/s;  16942 sec
+[2019-10-06 00:07:29,041 INFO] Step 15800/202000; acc:  76.47; ppl:  2.42; xent: 0.89; lr: 0.00070; 26819/28947 tok/s;  17048 sec
+[2019-10-06 00:09:15,465 INFO] Step 15900/202000; acc:  76.51; ppl:  2.42; xent: 0.88; lr: 0.00070; 26443/28888 tok/s;  17154 sec
+[2019-10-06 00:09:37,820 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.1.pt
+[2019-10-06 00:09:44,626 INFO] number of examples: 421684
+[2019-10-06 00:11:01,524 INFO] Step 16000/202000; acc:  76.60; ppl:  2.41; xent: 0.88; lr: 0.00070; 26259/28910 tok/s;  17260 sec
+[2019-10-06 00:11:01,525 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-06 00:11:01,557 INFO] number of examples: 5006
+[2019-10-06 00:11:09,143 INFO] Validation perplexity: 3.40887
+[2019-10-06 00:11:09,143 INFO] Validation accuracy: 73.7508
+[2019-10-06 00:11:09,143 INFO] Model is improving acc: 73.6701 --> 73.7508.
+[2019-10-06 00:11:09,143 INFO] Model is improving ppl: 3.41349 --> 3.40887.
+[2019-10-06 00:11:09,353 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_16000.pt
+[2019-10-06 00:12:56,779 INFO] Step 16100/202000; acc:  76.51; ppl:  2.42; xent: 0.88; lr: 0.00070; 24365/26277 tok/s;  17375 sec
+[2019-10-06 00:14:43,056 INFO] Step 16200/202000; acc:  76.73; ppl:  2.40; xent: 0.87; lr: 0.00069; 26323/28760 tok/s;  17482 sec
+[2019-10-06 00:16:00,550 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.0.pt
+[2019-10-06 00:16:19,592 INFO] number of examples: 892901
+[2019-10-06 00:16:29,161 INFO] Step 16300/202000; acc:  76.71; ppl:  2.40; xent: 0.87; lr: 0.00069; 26467/28889 tok/s;  17588 sec
+[2019-10-06 00:18:16,079 INFO] Step 16400/202000; acc:  76.67; ppl:  2.40; xent: 0.88; lr: 0.00069; 26414/28725 tok/s;  17695 sec
+[2019-10-06 00:20:02,447 INFO] Step 16500/202000; acc:  76.57; ppl:  2.41; xent: 0.88; lr: 0.00069; 26419/28903 tok/s;  17801 sec
+[2019-10-06 00:20:02,448 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-06 00:20:02,517 INFO] number of examples: 5006
+[2019-10-06 00:20:10,066 INFO] Validation perplexity: 3.42785
+[2019-10-06 00:20:10,066 INFO] Validation accuracy: 73.7378
+[2019-10-06 00:20:10,066 INFO] Decreasing patience: 4/5
+[2019-10-06 00:20:10,276 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_16500.pt
+[2019-10-06 00:21:57,868 INFO] Step 16600/202000; acc:  76.70; ppl:  2.40; xent: 0.87; lr: 0.00069; 24505/26626 tok/s;  17916 sec
+[2019-10-06 00:23:44,544 INFO] Step 16700/202000; acc:  76.74; ppl:  2.39; xent: 0.87; lr: 0.00068; 26568/28878 tok/s;  18023 sec
+[2019-10-06 00:25:31,222 INFO] Step 16800/202000; acc:  76.79; ppl:  2.39; xent: 0.87; lr: 0.00068; 26337/28897 tok/s;  18130 sec
+[2019-10-06 00:27:17,615 INFO] Step 16900/202000; acc:  76.72; ppl:  2.39; xent: 0.87; lr: 0.00068; 26648/28758 tok/s;  18236 sec
+[2019-10-06 00:29:04,071 INFO] Step 17000/202000; acc:  76.80; ppl:  2.38; xent: 0.87; lr: 0.00068; 26444/28853 tok/s;  18343 sec
+[2019-10-06 00:29:04,072 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-06 00:29:04,103 INFO] number of examples: 5006
+[2019-10-06 00:29:11,746 INFO] Validation perplexity: 3.4079
+[2019-10-06 00:29:11,746 INFO] Validation accuracy: 73.7801
+[2019-10-06 00:29:11,746 INFO] Model is improving acc: 73.7508 --> 73.7801.
+[2019-10-06 00:29:11,746 INFO] Model is improving ppl: 3.40887 --> 3.4079.
+[2019-10-06 00:29:11,957 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_17000.pt
+[2019-10-06 00:29:33,486 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.1.pt
+[2019-10-06 00:29:43,917 INFO] number of examples: 421684
+[2019-10-06 00:30:59,439 INFO] Step 17100/202000; acc:  76.85; ppl:  2.38; xent: 0.87; lr: 0.00068; 24141/26583 tok/s;  18458 sec
+[2019-10-06 00:32:45,706 INFO] Step 17200/202000; acc:  76.77; ppl:  2.39; xent: 0.87; lr: 0.00067; 26421/28502 tok/s;  18564 sec
+[2019-10-06 00:34:31,855 INFO] Step 17300/202000; acc:  77.00; ppl:  2.36; xent: 0.86; lr: 0.00067; 26370/28792 tok/s;  18670 sec
+[2019-10-06 00:35:47,755 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.0.pt
+[2019-10-06 00:36:04,759 INFO] number of examples: 892901
+[2019-10-06 00:36:18,212 INFO] Step 17400/202000; acc:  76.99; ppl:  2.36; xent: 0.86; lr: 0.00067; 26374/28836 tok/s;  18777 sec
+[2019-10-06 00:38:04,859 INFO] Step 17500/202000; acc:  76.91; ppl:  2.37; xent: 0.86; lr: 0.00067; 26486/28786 tok/s;  18883 sec
+[2019-10-06 00:38:04,860 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-06 00:38:04,933 INFO] number of examples: 5006
+[2019-10-06 00:38:12,527 INFO] Validation perplexity: 3.40982
+[2019-10-06 00:38:12,527 INFO] Validation accuracy: 73.7592
+[2019-10-06 00:38:12,528 INFO] Decreasing patience: 4/5
+[2019-10-06 00:38:12,737 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_17500.pt
+[2019-10-06 00:40:00,511 INFO] Step 17600/202000; acc:  76.83; ppl:  2.38; xent: 0.87; lr: 0.00067; 24309/26587 tok/s;  18999 sec
+[2019-10-06 00:41:46,417 INFO] Step 17700/202000; acc:  76.96; ppl:  2.37; xent: 0.86; lr: 0.00066; 26678/29020 tok/s;  19105 sec
+[2019-10-06 00:43:32,930 INFO] Step 17800/202000; acc:  77.02; ppl:  2.36; xent: 0.86; lr: 0.00066; 26651/28919 tok/s;  19212 sec
+[2019-10-06 00:45:19,248 INFO] Step 17900/202000; acc:  77.03; ppl:  2.36; xent: 0.86; lr: 0.00066; 26417/29001 tok/s;  19318 sec
+[2019-10-06 00:47:05,190 INFO] Step 18000/202000; acc:  76.97; ppl:  2.36; xent: 0.86; lr: 0.00066; 26733/28847 tok/s;  19424 sec
+[2019-10-06 00:47:05,191 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-06 00:47:05,235 INFO] number of examples: 5006
+[2019-10-06 00:47:12,845 INFO] Validation perplexity: 3.43169
+[2019-10-06 00:47:12,845 INFO] Validation accuracy: 73.804
+[2019-10-06 00:47:12,845 INFO] Stalled patience: 4/5
+[2019-10-06 00:47:13,065 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_18000.pt
+[2019-10-06 00:49:00,490 INFO] Step 18100/202000; acc:  77.01; ppl:  2.36; xent: 0.86; lr: 0.00066; 24422/26660 tok/s;  19539 sec
+[2019-10-06 00:49:18,783 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.1.pt
+[2019-10-06 00:49:29,011 INFO] number of examples: 421684
+[2019-10-06 00:50:46,917 INFO] Step 18200/202000; acc:  77.11; ppl:  2.35; xent: 0.85; lr: 0.00066; 26176/28783 tok/s;  19646 sec
+[2019-10-06 00:52:32,509 INFO] Step 18300/202000; acc:  77.05; ppl:  2.36; xent: 0.86; lr: 0.00065; 26602/28729 tok/s;  19751 sec
+[2019-10-06 00:54:18,729 INFO] Step 18400/202000; acc:  77.19; ppl:  2.34; xent: 0.85; lr: 0.00065; 26324/28775 tok/s;  19857 sec
+[2019-10-06 00:55:33,190 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.0.pt
+[2019-10-06 00:55:53,381 INFO] number of examples: 892901
+[2019-10-06 00:56:04,870 INFO] Step 18500/202000; acc:  77.26; ppl:  2.33; xent: 0.85; lr: 0.00065; 26448/28899 tok/s;  19963 sec
+[2019-10-06 00:56:04,871 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-06 00:56:04,945 INFO] number of examples: 5006
+[2019-10-06 00:56:12,546 INFO] Validation perplexity: 3.42161
+[2019-10-06 00:56:12,547 INFO] Validation accuracy: 73.7836
+[2019-10-06 00:56:12,547 INFO] Stalled patience: 3/5
+[2019-10-06 00:56:12,757 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_18500.pt
+[2019-10-06 00:58:00,666 INFO] Step 18600/202000; acc:  77.10; ppl:  2.35; xent: 0.85; lr: 0.00065; 24369/26494 tok/s;  20079 sec
+[2019-10-06 00:59:47,507 INFO] Step 18700/202000; acc:  77.13; ppl:  2.35; xent: 0.85; lr: 0.00065; 26349/28781 tok/s;  20186 sec
+[2019-10-06 01:01:33,261 INFO] Step 18800/202000; acc:  77.19; ppl:  2.34; xent: 0.85; lr: 0.00064; 26693/29064 tok/s;  20292 sec
+[2019-10-06 01:03:19,581 INFO] Step 18900/202000; acc:  77.25; ppl:  2.33; xent: 0.85; lr: 0.00064; 26710/28983 tok/s;  20398 sec
+[2019-10-06 01:05:05,779 INFO] Step 19000/202000; acc:  77.25; ppl:  2.33; xent: 0.85; lr: 0.00064; 26466/29028 tok/s;  20504 sec
+[2019-10-06 01:05:05,779 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-06 01:05:05,812 INFO] number of examples: 5006
+[2019-10-06 01:05:13,518 INFO] Validation perplexity: 3.43188
+[2019-10-06 01:05:13,518 INFO] Validation accuracy: 73.7743
+[2019-10-06 01:05:13,518 INFO] Decreasing patience: 3/5
+[2019-10-06 01:05:13,729 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_19000.pt
+[2019-10-06 01:07:00,904 INFO] Step 19100/202000; acc:  77.19; ppl:  2.34; xent: 0.85; lr: 0.00064; 24604/26534 tok/s;  20620 sec
+[2019-10-06 01:08:46,725 INFO] Step 19200/202000; acc:  77.28; ppl:  2.33; xent: 0.84; lr: 0.00064; 26591/29060 tok/s;  20725 sec
+[2019-10-06 01:09:02,882 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.1.pt
+[2019-10-06 01:09:09,814 INFO] number of examples: 421684
+[2019-10-06 01:10:32,504 INFO] Step 19300/202000; acc:  77.34; ppl:  2.32; xent: 0.84; lr: 0.00064; 26343/28957 tok/s;  20831 sec
+[2019-10-06 01:12:18,547 INFO] Step 19400/202000; acc:  77.28; ppl:  2.33; xent: 0.85; lr: 0.00063; 26494/28607 tok/s;  20937 sec
+[2019-10-06 01:14:04,802 INFO] Step 19500/202000; acc:  77.40; ppl:  2.31; xent: 0.84; lr: 0.00063; 26271/28776 tok/s;  21043 sec
+[2019-10-06 01:14:04,803 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-06 01:14:04,835 INFO] number of examples: 5006
+[2019-10-06 01:14:12,432 INFO] Validation perplexity: 3.40196
+[2019-10-06 01:14:12,432 INFO] Validation accuracy: 73.863
+[2019-10-06 01:14:12,433 INFO] Model is improving acc: 73.7801 --> 73.863.
+[2019-10-06 01:14:12,433 INFO] Model is improving ppl: 3.4079 --> 3.40196.
+[2019-10-06 01:14:12,644 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_19500.pt
+[2019-10-06 01:15:25,775 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.0.pt
+[2019-10-06 01:15:45,548 INFO] number of examples: 892901
+[2019-10-06 01:15:59,589 INFO] Step 19600/202000; acc:  77.53; ppl:  2.30; xent: 0.83; lr: 0.00063; 24500/26720 tok/s;  21158 sec
+[2019-10-06 01:17:45,992 INFO] Step 19700/202000; acc:  77.32; ppl:  2.32; xent: 0.84; lr: 0.00063; 26527/28804 tok/s;  21265 sec
+[2019-10-06 01:19:32,298 INFO] Step 19800/202000; acc:  77.36; ppl:  2.32; xent: 0.84; lr: 0.00063; 26466/28952 tok/s;  21371 sec
+[2019-10-06 01:21:17,882 INFO] Step 19900/202000; acc:  77.44; ppl:  2.31; xent: 0.84; lr: 0.00063; 26745/29124 tok/s;  21476 sec
+[2019-10-06 01:23:04,410 INFO] Step 20000/202000; acc:  77.52; ppl:  2.31; xent: 0.84; lr: 0.00062; 26645/28900 tok/s;  21583 sec
+[2019-10-06 01:23:04,411 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-06 01:23:04,479 INFO] number of examples: 5006
+[2019-10-06 01:23:12,118 INFO] Validation perplexity: 3.42832
+[2019-10-06 01:23:12,118 INFO] Validation accuracy: 73.7753
+[2019-10-06 01:23:12,118 INFO] Decreasing patience: 4/5
+[2019-10-06 01:23:12,330 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_20000.pt
+[2019-10-06 01:24:59,540 INFO] Step 20100/202000; acc:  77.45; ppl:  2.31; xent: 0.84; lr: 0.00062; 24424/26766 tok/s;  21698 sec
+[2019-10-06 01:26:45,276 INFO] Step 20200/202000; acc:  77.43; ppl:  2.31; xent: 0.84; lr: 0.00062; 26781/28929 tok/s;  21804 sec
+[2019-10-06 01:28:31,615 INFO] Step 20300/202000; acc:  77.45; ppl:  2.31; xent: 0.84; lr: 0.00062; 26456/28899 tok/s;  21910 sec
+[2019-10-06 01:28:46,581 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.1.pt
+[2019-10-06 01:28:53,348 INFO] number of examples: 421684
+[2019-10-06 01:30:18,084 INFO] Step 20400/202000; acc:  77.58; ppl:  2.30; xent: 0.83; lr: 0.00062; 26183/28762 tok/s;  22017 sec
+[2019-10-06 01:32:03,938 INFO] Step 20500/202000; acc:  77.52; ppl:  2.30; xent: 0.83; lr: 0.00062; 26542/28650 tok/s;  22123 sec
+[2019-10-06 01:32:03,939 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-06 01:32:03,972 INFO] number of examples: 5006
+[2019-10-06 01:32:11,577 INFO] Validation perplexity: 3.43143
+[2019-10-06 01:32:11,577 INFO] Validation accuracy: 73.7553
+[2019-10-06 01:32:11,577 INFO] Decreasing patience: 3/5
+[2019-10-06 01:32:11,787 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_20500.pt
+[2019-10-06 01:33:59,496 INFO] Step 20600/202000; acc:  77.62; ppl:  2.29; xent: 0.83; lr: 0.00062; 24134/26454 tok/s;  22238 sec
+[2019-10-06 01:35:09,544 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.0.pt
+[2019-10-06 01:35:27,874 INFO] number of examples: 892901
+[2019-10-06 01:35:45,764 INFO] Step 20700/202000; acc:  77.73; ppl:  2.28; xent: 0.83; lr: 0.00061; 26462/28892 tok/s;  22344 sec
+[2019-10-06 01:37:31,892 INFO] Step 20800/202000; acc:  77.54; ppl:  2.30; xent: 0.83; lr: 0.00061; 26589/28880 tok/s;  22450 sec
+[2019-10-06 01:39:18,806 INFO] Step 20900/202000; acc:  77.60; ppl:  2.30; xent: 0.83; lr: 0.00061; 26328/28777 tok/s;  22557 sec
+[2019-10-06 01:41:04,719 INFO] Step 21000/202000; acc:  77.62; ppl:  2.29; xent: 0.83; lr: 0.00061; 26648/29012 tok/s;  22663 sec
+[2019-10-06 01:41:04,719 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-06 01:41:04,790 INFO] number of examples: 5006
+[2019-10-06 01:41:12,400 INFO] Validation perplexity: 3.41521
+[2019-10-06 01:41:12,400 INFO] Validation accuracy: 73.8405
+[2019-10-06 01:41:12,400 INFO] Decreasing patience: 2/5
+[2019-10-06 01:41:12,612 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_21000.pt
+[2019-10-06 01:43:00,327 INFO] Step 21100/202000; acc:  77.75; ppl:  2.28; xent: 0.83; lr: 0.00061; 24577/26632 tok/s;  22779 sec
+[2019-10-06 01:44:46,617 INFO] Step 21200/202000; acc:  77.66; ppl:  2.29; xent: 0.83; lr: 0.00061; 26419/28997 tok/s;  22885 sec
+[2019-10-06 01:46:32,541 INFO] Step 21300/202000; acc:  77.65; ppl:  2.29; xent: 0.83; lr: 0.00061; 26767/28878 tok/s;  22991 sec
+[2019-10-06 01:48:18,786 INFO] Step 21400/202000; acc:  77.71; ppl:  2.28; xent: 0.82; lr: 0.00060; 26484/28932 tok/s;  23097 sec
+[2019-10-06 01:48:31,619 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.1.pt
+[2019-10-06 01:48:41,300 INFO] number of examples: 421684
+[2019-10-06 01:50:04,461 INFO] Step 21500/202000; acc:  77.78; ppl:  2.27; xent: 0.82; lr: 0.00060; 26373/28992 tok/s;  23203 sec
+[2019-10-06 01:50:04,461 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-06 01:50:04,497 INFO] number of examples: 5006
+[2019-10-06 01:50:12,122 INFO] Validation perplexity: 3.43087
+[2019-10-06 01:50:12,122 INFO] Validation accuracy: 73.7747
+[2019-10-06 01:50:12,122 INFO] Decreasing patience: 1/5
+[2019-10-06 01:50:12,333 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_21500.pt
+[2019-10-06 01:52:00,273 INFO] Step 21600/202000; acc:  77.72; ppl:  2.28; xent: 0.82; lr: 0.00060; 24262/26175 tok/s;  23319 sec
+[2019-10-06 01:53:46,055 INFO] Step 21700/202000; acc:  77.87; ppl:  2.27; xent: 0.82; lr: 0.00060; 26372/28888 tok/s;  23425 sec
+[2019-10-06 01:54:53,737 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.train.0.pt
+[2019-10-06 01:55:14,939 INFO] number of examples: 892901
+[2019-10-06 01:55:32,057 INFO] Step 21800/202000; acc:  77.94; ppl:  2.26; xent: 0.82; lr: 0.00060; 26521/28981 tok/s;  23531 sec
+[2019-10-06 01:57:18,438 INFO] Step 21900/202000; acc:  77.77; ppl:  2.28; xent: 0.82; lr: 0.00060; 26529/28799 tok/s;  23637 sec
+[2019-10-06 01:59:04,807 INFO] Step 22000/202000; acc:  77.80; ppl:  2.27; xent: 0.82; lr: 0.00060; 26469/28937 tok/s;  23743 sec
+[2019-10-06 01:59:04,808 INFO] Loading dataset from /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/data/ready_to_train.valid.0.pt
+[2019-10-06 01:59:04,884 INFO] number of examples: 5006
+[2019-10-06 01:59:12,468 INFO] Validation perplexity: 3.42247
+[2019-10-06 01:59:12,468 INFO] Validation accuracy: 73.8595
+[2019-10-06 01:59:12,468 INFO] Decreasing patience: 0/5
+[2019-10-06 01:59:12,468 INFO] Training finished after not improving. Early Stop!
+[2019-10-06 01:59:12,468 INFO] Best model found at step 19500
+[2019-10-06 01:59:12,701 INFO] Saving checkpoint /media/barracuda4tb/dimitarsh1/Projects/BiasNMT/data/en-es-TRANS-BPE-NEW/model/model_step_22000.pt
